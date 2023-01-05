@@ -1,0 +1,158 @@
+ERROR - 2023-01-04 21:56:37 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'nadi-app' in C:\xampp-8-1-12\htdocs\nadi-app\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp-8-1-12\htdocs\nadi-app\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'nadi-app', 3306, '', 0)
+#1 C:\xampp-8-1-12\htdocs\nadi-app\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp-8-1-12\htdocs\nadi-app\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp-8-1-12\htdocs\nadi-app\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp-8-1-12\htdocs\nadi-app\system\Model.php(805): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp-8-1-12\htdocs\nadi-app\app\Controllers\Frontend\Homecontroller.php(19): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp-8-1-12\htdocs\nadi-app\system\CodeIgniter.php(925): App\Controllers\Frontend\Homecontroller->index()
+#7 C:\xampp-8-1-12\htdocs\nadi-app\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\Homecontroller))
+#8 C:\xampp-8-1-12\htdocs\nadi-app\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp-8-1-12\htdocs\nadi-app\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp-8-1-12\htdocs\nadi-app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp-8-1-12...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'nadi-app' in C:\xampp-8-1-12\htdocs\nadi-app\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp-8-1-12\htdocs\nadi-app\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp-8-1-12\htdocs\nadi-app\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp-8-1-12\htdocs\nadi-app\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp-8-1-12\htdocs\nadi-app\system\Model.php(805): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp-8-1-12\htdocs\nadi-app\app\Controllers\Frontend\Homecontroller.php(19): CodeIgniter\Model->__call('get', Array)
+#5 C:\xampp-8-1-12\htdocs\nadi-app\system\CodeIgniter.php(925): App\Controllers\Frontend\Homecontroller->index()
+#6 C:\xampp-8-1-12\htdocs\nadi-app\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\Homecontroller))
+#7 C:\xampp-8-1-12\htdocs\nadi-app\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp-8-1-12\htdocs\nadi-app\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp-8-1-12\htdocs\nadi-app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp-8-1-12...')
+#10 {main}
+CRITICAL - 2023-01-04 21:56:37 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'nadi-app'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `configuration`', [], false)
+ 3 SYSTEMPATH\Model.php(805): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Frontend\Homecontroller.php(19): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\Homecontroller->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\Homecontroller))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-04 21:57:28 --> mysqli_sql_exception: Table 'nadi-app.configuration' doesn't exist in C:\xampp-8-1-12\htdocs\nadi-app\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp-8-1-12\htdocs\nadi-app\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp-8-1-12\htdocs\nadi-app\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp-8-1-12\htdocs\nadi-app\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp-8-1-12\htdocs\nadi-app\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp-8-1-12\htdocs\nadi-app\system\Model.php(805): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp-8-1-12\htdocs\nadi-app\app\Controllers\Frontend\Homecontroller.php(19): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp-8-1-12\htdocs\nadi-app\system\CodeIgniter.php(925): App\Controllers\Frontend\Homecontroller->index()
+#7 C:\xampp-8-1-12\htdocs\nadi-app\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\Homecontroller))
+#8 C:\xampp-8-1-12\htdocs\nadi-app\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp-8-1-12\htdocs\nadi-app\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp-8-1-12\htdocs\nadi-app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp-8-1-12...')
+#11 {main}
+CRITICAL - 2023-01-04 21:57:28 --> Table 'nadi-app.configuration' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `configuration`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `configuration`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `configuration`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `configuration`', [], false)
+ 5 SYSTEMPATH\Model.php(805): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Frontend\Homecontroller.php(19): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\Homecontroller->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\Homecontroller))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-04 21:57:30 --> mysqli_sql_exception: Table 'nadi-app.configuration' doesn't exist in C:\xampp-8-1-12\htdocs\nadi-app\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp-8-1-12\htdocs\nadi-app\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp-8-1-12\htdocs\nadi-app\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp-8-1-12\htdocs\nadi-app\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp-8-1-12\htdocs\nadi-app\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp-8-1-12\htdocs\nadi-app\system\Model.php(805): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp-8-1-12\htdocs\nadi-app\app\Controllers\Frontend\Homecontroller.php(19): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp-8-1-12\htdocs\nadi-app\system\CodeIgniter.php(925): App\Controllers\Frontend\Homecontroller->index()
+#7 C:\xampp-8-1-12\htdocs\nadi-app\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\Homecontroller))
+#8 C:\xampp-8-1-12\htdocs\nadi-app\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp-8-1-12\htdocs\nadi-app\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp-8-1-12\htdocs\nadi-app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp-8-1-12...')
+#11 {main}
+CRITICAL - 2023-01-04 21:57:30 --> Table 'nadi-app.configuration' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `configuration`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `configuration`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `configuration`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `configuration`', [], false)
+ 5 SYSTEMPATH\Model.php(805): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Frontend\Homecontroller.php(19): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\Homecontroller->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\Homecontroller))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-04 21:58:35 --> mysqli_sql_exception: Table 'nadi-app.configuration' doesn't exist in C:\xampp-8-1-12\htdocs\nadi-app\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp-8-1-12\htdocs\nadi-app\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp-8-1-12\htdocs\nadi-app\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp-8-1-12\htdocs\nadi-app\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp-8-1-12\htdocs\nadi-app\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp-8-1-12\htdocs\nadi-app\system\Model.php(805): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp-8-1-12\htdocs\nadi-app\app\Controllers\Frontend\Homecontroller.php(19): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp-8-1-12\htdocs\nadi-app\system\CodeIgniter.php(925): App\Controllers\Frontend\Homecontroller->index()
+#7 C:\xampp-8-1-12\htdocs\nadi-app\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\Homecontroller))
+#8 C:\xampp-8-1-12\htdocs\nadi-app\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp-8-1-12\htdocs\nadi-app\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp-8-1-12\htdocs\nadi-app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp-8-1-12...')
+#11 {main}
+CRITICAL - 2023-01-04 21:58:35 --> Table 'nadi-app.configuration' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `configuration`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `configuration`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `configuration`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `configuration`', [], false)
+ 5 SYSTEMPATH\Model.php(805): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Frontend\Homecontroller.php(19): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\Homecontroller->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\Homecontroller))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-04 21:58:46 --> Undefined variable $configuration
+in APPPATH\Views\frontend\home\index.php on line 8.
+ 1 APPPATH\Views\frontend\home\index.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $configuration', 'APPPATH\\Views\\frontend\\home\\index.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\frontend\\home\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('frontend/home/index', [], true)
+ 5 APPPATH\Controllers\Frontend\Homecontroller.php(71): view('frontend/home/index')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\Homecontroller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\Homecontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-04 21:58:47 --> Undefined variable $configuration
+in APPPATH\Views\frontend\home\index.php on line 8.
+ 1 APPPATH\Views\frontend\home\index.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $configuration', 'APPPATH\\Views\\frontend\\home\\index.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\frontend\\home\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('frontend/home/index', [], true)
+ 5 APPPATH\Controllers\Frontend\Homecontroller.php(71): view('frontend/home/index')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\Homecontroller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\Homecontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
