@@ -35,6 +35,10 @@ $routes->set404Override();
 
 // Routes Frontend Website
 $routes->get('/', [\App\Controllers\Frontend\Homecontroller::class, 'index']);
+$routes->get('our-apps', [\App\Controllers\Frontend\Ourappscontroller::class, 'index']);
+
+
+
 $routes->get('about', [\App\Controllers\Frontend\Aboutcontroller::class, 'index']);
 $routes->get('account', [\App\Controllers\Frontend\Accountcontroller::class, 'index'], ['filter' => 'user_auth']);
 $routes->post('account/update/(:any)', [\App\Controllers\Frontend\Accountcontroller::class, 'update'], ['filter' => 'user_auth']);
