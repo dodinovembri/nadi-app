@@ -63,7 +63,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-10">
                         <div class="hero-content-wrap mt-5 mt-lg-0 mt-xl-0">
-                            <h1 class="fw-bold display-5">We Care Your any IT Solution</h1>
+                            <h1 class="fw-bold display-5">Advanced Feature to Grow Your Business</h1>
                             <p class="lead">
                                 Proactively coordinate quality quality vectors vis-a-vis supply
                                 chains. Quickly engage client-centric web services.
@@ -96,7 +96,7 @@
         <!--hero section end-->
 
         <!-- app two feature three start -->
-        <section class="services-icon ptb-120">
+        <section class="services-icon ptb-80">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-md-10">
@@ -201,20 +201,9 @@
 
         <!--style guide block start-->
         <div class="style-guide">
-            <div class="bg-primary-soft ptb-60">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-6 col-md-12">
-                            <div class="style-guide-heading text-center">
-                                <h2>Pricing Switch</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <!--pricing section start-->
-            <section class="pricing-section position-relative overflow-hidden bg-dark text-white pt-120" style="background: url('assets/img/page-header-bg.svg')no-repeat center center">
+            <section class="pricing-section position-relative overflow-hidden bg-dark text-white pt-80" style="background: url('assets/img/page-header-bg.svg')no-repeat center center">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-6 col-md-12">
@@ -244,6 +233,9 @@
                                 <div class="price-feature-col pricing-action-info p-5">
                                     <ul class="nav nav-pills mb-4 pricing-tab-list" id="pills-tab" role="tablist">
                                         <li class="nav-item" role="presentation">
+                                            <button id="pills-daily-tab" data-bs-toggle="pill" data-bs-target="#pills-daily" type="button" role="tab" aria-controls="pills-daily" aria-selected="true">Daily</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
                                             <button class="active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Monthly</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
@@ -251,11 +243,19 @@
                                         </li>
                                     </ul>
                                     <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade" id="pills-daily" role="tabpanel" aria-labelledby="pills-daily-tab">
+                                            <h3 class="h5">Pro Daily</h3>
+                                            <p>Professionally integrate principle-centered intellectual capital whereas equity.</p>
+                                            <div class="pricing-price mt-5">
+                                                <h3 class="h3 fw-bold">Rp. 1.500 <span>/Day</span></h3>
+                                            </div>
+                                            <a href="request-demo.html" class="btn btn-primary mt-3">Start 14-Days Trial</a>
+                                        </div>
                                         <div class="tab-pane fade active show" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                                             <h3 class="h5">Pro Monthly</h3>
                                             <p>Professionally integrate principle-centered intellectual capital whereas equity.</p>
                                             <div class="pricing-price mt-5">
-                                                <h4 class="h1 fw-bold">$49 <span>/Month</span></h4>
+                                                <h3 class="h3 fw-bold">Rp. 35.000 <span>/Month</span></h3>
                                             </div>
                                             <a href="request-demo.html" class="btn btn-primary mt-3">Start 14-Days Trial</a>
                                         </div>
@@ -263,7 +263,7 @@
                                             <h3 class="h5">Pro Yearly</h3>
                                             <p>Uniquely engineer prospective alignments without clicks-and-mortar innovation.</p>
                                             <div class="pricing-price mt-5">
-                                                <h4 class="h1 fw-bold">$89 <span>/Year</span></h4>
+                                                <h3 class="h3 fw-bold">Rp. 375.000 <span>/Year</span></h3>
                                             </div>
                                             <a href="request-demo.html" class="btn btn-primary mt-3">Start 14-Days Trial</a>
                                         </div>
@@ -283,7 +283,7 @@
         <!--style guide block end-->
 
         <!--cat subscribe start-->
-        <section class="cta-subscribe bg-dark text-white ptb-120 position-relative overflow-hidden">
+        <section class="cta-subscribe bg-dark text-white ptb-80 position-relative overflow-hidden">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-md-10">
