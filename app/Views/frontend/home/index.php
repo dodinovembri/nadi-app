@@ -172,7 +172,7 @@
                                 <img src="assets/img/service/graphic-design.png" alt="service icon" width="65" height="65" />
                             </div>
                             <div class="feature-info-wrap">
-                                <h3 class="h5">Graphics Design</h3>
+                                <h3 class="h5">Web Accounting</h3>
                                 <p>
                                     Holisticly morph distinctive methodologies and vertical e-tailers.
                                     Rapidiously grow customized data.
