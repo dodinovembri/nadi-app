@@ -116,7 +116,7 @@
                                 <img src="assets/img/service/coding.png" alt="service icon" width="65" height="65" />
                             </div>
                             <div class="service-info-wrap">
-                                <h3 class="h5">Web Development</h3>
+                                <h3 class="h5">Web Company Profile</h3>
                                 <p>
                                     Holisticly morph distinctive methodologies and vertical e-tailers.
                                     Rapidiously grow customized data.
@@ -130,7 +130,7 @@
                                 <img src="assets/img/service/app-development.png" alt="service icon" width="65" height="65" />
                             </div>
                             <div class="service-info-wrap">
-                                <h3 class="h5">App Development</h3>
+                                <h3 class="h5">Web Photo Studio</h3>
                                 <p>
                                     Holisticly morph distinctive methodologies and vertical e-tailers.
                                     Rapidiously grow customized data.
@@ -144,7 +144,7 @@
                                 <img src="assets/img/service/shield.png" alt="service icon" width="65" height="65" />
                             </div>
                             <div class="service-info-wrap">
-                                <h3 class="h5">Data Sceurity</h3>
+                                <h3 class="h5">Web Ecommerce</h3>
                                 <p>
                                     Holisticly morph distinctive methodologies and vertical e-tailers.
                                     Rapidiously grow customized data.
