@@ -57,32 +57,29 @@
     <!--main content wrapper start-->
     <div class="main-wrapper">
         <?= $this->include('frontend/components/header') ?>
-        <!--hero section start-->
-        <section class="hero-it-solution hero-nine-bg ptb-120" style="background: url('assets/img/hero-9-img.png')no-repeat center center">
+        <!-- hero section start-->
+        <section class="hero-it-solution hero-nine-bg ptb-120" style="background: url(<?= base_url('assets/img/hero/' . $hero->background_image) ?>)no-repeat center center">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-10">
                         <div class="hero-content-wrap mt-5 mt-lg-0 mt-xl-0">
-                            <h1 class="fw-bold display-5">Advanced Feature to Grow Your Business</h1>
-                            <p class="lead">
-                                Proactively coordinate quality quality vectors vis-a-vis supply
-                                chains. Quickly engage client-centric web services.
-                            </p>
+                            <h1 class="fw-bold display-5"><?= $hero->text1; ?></h1>
+                            <p class="lead"><?= $hero->text2; ?></p>
                             <div class="action-btn mt-5 align-items-center d-block d-sm-flex d-lg-flex d-md-flex">
-                                <a href="request-demo.html" class="btn btn-primary me-3">Request For Demo</a>
-                                <a href="http://www.youtube.com/watch?v=hAP2QF--2Dg" class="text-decoration-none popup-youtube d-inline-flex align-items-center watch-now-btn mt-3 mt-lg-0 mt-md-0 text-primary">
+                                <a href="<?= base_url('request-demo') ?>" class="btn btn-primary me-3"><?= $hero->text_button1; ?></a>
+                                <a href="<?= $hero->demo_url; ?>" class="text-decoration-none popup-youtube d-inline-flex align-items-center watch-now-btn mt-3 mt-lg-0 mt-md-0 text-primary">
                                     <i class="fas fa-play text-primary border-2 border-primary"></i>
-                                    Watch Demo
+                                    <?= $hero->text_button2; ?>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="hero-img position-relative mt-5 mt-lg-0">
-                            <img src="assets/img/banner_image.png" alt="hero hero-it-solution " class="img-fluid" />
+                            <img src="<?= base_url('assets/img/hero/' . $hero->banner_image)  ?>" alt="hero hero-it-solution " class="img-fluid" />
                             <div class="dots">
-                                <img src="assets/img/banner_dot.png" alt="dot" class="dot-1" />
-                                <img src="assets/img/banner_dot.png" alt="dot" class="dot-2" />
+                                <img src="<?= base_url('assets/img/hero/' . $hero->dot_image1) ?>" alt="dot" class="dot-1" />
+                                <img src="<?= base_url('assets/img/hero/' . $hero->dot_image2) ?>" alt="dot" class="dot-2" />
                             </div>
                             <div class="bubble">
                                 <span class="bubble-1"></span>
@@ -93,9 +90,9 @@
                 </div>
             </div>
         </section>
-        <!--hero section end-->
+        <!-- hero section end-->
 
-        <!-- app two feature three start -->
+        <!-- services start -->
         <section class="services-icon ptb-80">
             <div class="container">
                 <div class="row justify-content-center">
@@ -110,96 +107,25 @@
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-6 p-0">
-                        <div class="single-service p-lg-5 p-4 text-center mt-3 border-bottom border-end">
-                            <div class="service-icon icon-center">
-                                <img src="assets/img/service/coding.png" alt="service icon" width="65" height="65" />
-                            </div>
-                            <div class="service-info-wrap">
-                                <h3 class="h5">Web Company Profile</h3>
-                                <p>
-                                    Holisticly morph distinctive methodologies and vertical e-tailers.
-                                    Rapidiously grow customized data.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 p-0">
-                        <div class="single-service p-lg-5 p-4 text-center mt-3 border-bottom border-end">
-                            <div class="service-icon icon-center">
-                                <img src="assets/img/service/app-development.png" alt="service icon" width="65" height="65" />
-                            </div>
-                            <div class="service-info-wrap">
-                                <h3 class="h5">Web Photo Studio</h3>
-                                <p>
-                                    Holisticly morph distinctive methodologies and vertical e-tailers.
-                                    Rapidiously grow customized data.
-                                </p>
+                    <?php foreach ($services as $key => $value) { ?>
+                        <div class="col-lg-4 col-md-6 p-0">
+                            <div class="single-service p-lg-5 p-4 text-center mt-3 border-bottom border-end">
+                                <div class="service-icon icon-center">
+                                    <img src="<?= base_url('assets/img/services/' . $value->image) ?>" alt="service icon" width="65" height="65" />
+                                </div>
+                                <div class="service-info-wrap">
+                                    <h3 class="h5"><?= $value->title ?></h3>
+                                    <p><?= $value->description ?></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 p-0">
-                        <div class="single-service p-lg-5 p-4 text-center mt-3 border-bottom">
-                            <div class="service-icon icon-center">
-                                <img src="assets/img/service/shield.png" alt="service icon" width="65" height="65" />
-                            </div>
-                            <div class="service-info-wrap">
-                                <h3 class="h5">Web E-commerce</h3>
-                                <p>
-                                    Holisticly morph distinctive methodologies and vertical e-tailers.
-                                    Rapidiously grow customized data.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 p-0">
-                        <div class="single-service p-lg-5 p-4 text-center border-end">
-                            <div class="service-icon icon-center">
-                                <img src="assets/img/service/curve.png" alt="service icon" width="65" height="65" />
-                            </div>
-                            <div class="feature-info-wrap">
-                                <h3 class="h5">Web Point Of Sale</h3>
-                                <p>
-                                    Holisticly morph distinctive methodologies and vertical e-tailers.
-                                    Rapidiously grow customized data.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 p-0">
-                        <div class="single-service p-lg-5 p-4 text-center border-end">
-                            <div class="service-icon icon-center">
-                                <img src="assets/img/service/graphic-design.png" alt="service icon" width="65" height="65" />
-                            </div>
-                            <div class="feature-info-wrap">
-                                <h3 class="h5">Web Accounting</h3>
-                                <p>
-                                    Holisticly morph distinctive methodologies and vertical e-tailers.
-                                    Rapidiously grow customized data.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 p-0">
-                        <div class="single-service p-lg-5 p-4 text-center">
-                            <div class="service-icon icon-center">
-                                <img src="assets/img/service/promotion.png" alt="service icon" width="65" height="65" />
-                            </div>
-                            <div class="feature-info-wrap">
-                                <h3 class="h5">Digital Marketing</h3>
-                                <p>
-                                    Holisticly morph distinctive methodologies and vertical e-tailers.
-                                    Rapidiously grow customized data.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    <?php } ?>
                 </div>
             </div>
         </section>
-        <!-- app two feature three end -->
+        <!-- services end -->
 
-        <!--style guide block start-->
+        <!-- price start-->
         <div class="style-guide">
 
             <!--pricing section start-->
@@ -219,15 +145,9 @@
                             <div class="pricing-content-wrap mb--100 bg-white rounded-custom shadow-lg border d-fle z-10">
                                 <div class="price-feature-col pricing-feature-info left-radius bg-primary-soft p-5">
                                     <ul class="list-unstyled pricing-feature-list pricing-included-list mb-0">
-                                        <li class="py-1"><i class="fas fa-check-circle text-primary me-2"></i> Unlimited domains</li>
-                                        <li class="py-1"><i class="fas fa-check-circle text-primary me-2"></i>Unlimited notifications</li>
-                                        <li class="py-1"><i class="fas fa-check-circle text-primary me-2"></i> 10,000 unique visitors</li>
-                                        <li class="py-1"><i class="fas fa-check-circle text-primary me-2"></i> Conversion analytics</li>
-                                        <li class="py-1"><i class="fas fa-check-circle text-primary me-2"></i> Conversion analytics</li>
-                                        <li class="py-1"><i class="fas fa-check-circle text-primary me-2"></i> Live chat support</li>
-                                        <li class="py-1"><i class="fas fa-check-circle text-primary me-2"></i> Recent activity notification</li>
-                                        <li class="py-1"><i class="fas fa-check-circle text-primary me-2"></i> Live visitor count notification</li>
-                                        <li class="py-1"><i class="fas fa-check-circle text-primary me-2"></i> Send data to analytics tools</li>
+                                        <?php foreach ($features as $key => $value) { ?>
+                                            <li class="py-1"><i class="fas fa-check-circle text-primary me-2"></i> </li>
+                                        <?php } ?>
                                     </ul>
                                 </div>
                                 <div class="price-feature-col pricing-action-info p-5">
@@ -280,21 +200,21 @@
             <!--pricing section end-->
 
         </div>
-        <!--style guide block end-->
+        <!-- price end-->
 
-        <!--cat subscribe start-->
+        <!-- subscribe start-->
         <section class="cta-subscribe bg-dark text-white ptb-80 position-relative overflow-hidden">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-md-10">
                         <div class="subscribe-info-wrap text-center position-relative z-2">
                             <div class="section-heading" data-aos="fade-up">
-                                <h4 class="h5 text-warning">Let's Try! Get Free Support</h4>
-                                <h2>Start Your 14-Day Free Trial</h2>
-                                <p>We can help you to create your dream website for better business revenue.</p>
+                                <h4 class="h5 text-warning"><?= $config->subscribe_text1 ?>Let's Try! Get Free Support</h4>
+                                <h2><?= $config->subscribe_text2 ?>Start Your 14-Day Free Trial</h2>
+                                <p><?= $config->subscribe_text3 ?>We can help you to create your dream website for better business revenue.</p>
                             </div>
                             <div class="form-block-banner mw-60 m-auto mt-5" data-aos="fade-up" data-aos-delay="50">
-                                <a href="contact-us.html" class="btn btn-primary">Contact with Us</a>
+                                <a href="contact-us.html" class="btn btn-primary"><?= $config->subscribe_text_button1 ?>Contact with Us</a>
                                 <a href="http://www.youtube.com/watch?v=hAP2QF--2Dg" class="text-decoration-none popup-youtube d-inline-flex align-items-center watch-now-btn ms-lg-3 ms-md-3 mt-3 mt-lg-0"> <i class="fas fa-play"></i> Watch Demo </a>
                             </div>
                             <ul class="nav justify-content-center subscribe-feature-list mt-4" data-aos="fade-up" data-aos-delay="100">
@@ -317,43 +237,30 @@
                 <div class="bg-circle rounded-circle circle-shape-3 position-absolute bg-dark-light left-5"></div>
                 <div class="bg-circle rounded-circle circle-shape-1 position-absolute bg-warning right-5"></div>
             </div>
-        </section> <!--cat subscribe end-->
+        </section> <!-- subscribe end-->
 
-        <!-- app two customer review start -->
-        <section class="brand-logo ptb-120">
+        <!-- brand start -->
+        <section class="brand-logo ptb-80">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-7 col-md-10">
                         <div class="section-heading text-center">
-                            <h2>Over 500+ Companies Trusted Us</h2>
-                            <p>Over 500+ Companies Trusted Us</p>
+                            <h2><?= $config->brand_text1 ?>Over 500+ Companies Trusted Us</h2>
+                            <p><?= $config->brand_text2 ?>Over 500+ Companies Trusted Us</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <ul class="brand-logo-grid list-unstyled">
-                        <li>
-                            <img src="<?= base_url('assets/img/brand-logo/1-2.png') ?>" alt="brand logo" />
-                        </li>
-                        <li>
-                            <img src="<?= base_url('assets/img/brand-logo/2-1.png') ?>" alt="brand logo" />
-                        </li>
-                        <li>
-                            <img src="<?= base_url('assets/img/brand-logo/3-1.png') ?>" alt="brand logo" />
-                        </li>
-                        <li>
-                            <img src="<?= base_url('assets/img/brand-logo/4-1.png') ?>" alt="brand logo" />
-                        </li>
-                        <li>
-                            <img src="<?= base_url('assets/img/brand-logo/5-1.png') ?>" alt="brand logo" />
-                        </li>
+                        <?php foreach ($brands as $key => $value) { ?>
+                            <li><img src="<?= base_url('assets/img/brands/1-2.png') ?>" alt="brand logo" /></li>
+                        <?php } ?>
                     </ul>
                 </div>
             </div>
         </section>
-        <!-- app two customer review end -->
+        <!-- brand end -->
 
-        <!--footer section start-->
         <!--footer section start-->
         <footer class="footer-section">
             <!--footer top start-->
@@ -463,7 +370,7 @@
             </div>
             <!--footer bottom end-->
         </footer>
-        <!--footer section end--> <!--footer section end-->
+        <!--footer section end-->
     </div>
 
     <!--build:js-->
