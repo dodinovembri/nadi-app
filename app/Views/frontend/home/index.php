@@ -144,7 +144,7 @@
                                 <img src="assets/img/service/shield.png" alt="service icon" width="65" height="65" />
                             </div>
                             <div class="service-info-wrap">
-                                <h3 class="h5">Web Ecommerce</h3>
+                                <h3 class="h5">Web E-commerce</h3>
                                 <p>
                                     Holisticly morph distinctive methodologies and vertical e-tailers.
                                     Rapidiously grow customized data.
@@ -158,7 +158,7 @@
                                 <img src="assets/img/service/curve.png" alt="service icon" width="65" height="65" />
                             </div>
                             <div class="feature-info-wrap">
-                                <h3 class="h5">UI/UX Design</h3>
+                                <h3 class="h5">Web Point Of Sale</h3>
                                 <p>
                                     Holisticly morph distinctive methodologies and vertical e-tailers.
                                     Rapidiously grow customized data.
