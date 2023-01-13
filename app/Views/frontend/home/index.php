@@ -6,12 +6,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--meta-->
-    <meta name="description" content="<?= $config->description ?>Quiety creative Saas, software technology, Saas agency & business Bootstrap 5 Html template. It is best and famous software company and Saas website template.">
-    <meta name="author" content="<?= $config->author ?>ThemeTags">
-
     <!--favicon icon-->
     <link rel="icon" href="<?= base_url('assets/img/logo/'. $config->faveicon) ?>" type="image/png" sizes="16x16">
+
+    <!--meta-->
+    <meta name="author" content="<?= $config->author ?>ThemeTags">
+    <meta name="description" content="<?= $config->description ?>Quiety creative Saas, software technology, Saas agency & business Bootstrap 5 Html template. It is best and famous software company and Saas website template.">
 
     <!--title-->
     <title><?= $config->title ?>Quiety - Software & IT Solutions HTML Template</title>
@@ -40,7 +40,7 @@
     <div class="main-wrapper">
         <?= $this->include('frontend/components/header') ?>
         <!-- hero section start-->
-        <section class="hero-it-solution hero-nine-bg ptb-120" style="background: url(<?= base_url('assets/img/hero/' . $config->hero_background_image) ?>)no-repeat center center">
+        <section class="hero-it-solution hero-nine-bg ptb-120" style="background: url(<?= base_url('assets/img/configs/' . $config->hero_background_image) ?>)no-repeat center center">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-10">
@@ -58,10 +58,10 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="hero-img position-relative mt-5 mt-lg-0">
-                            <img src="<?= base_url('assets/img/hero/' . $config->hero_banner_image)  ?>" alt="hero hero-it-solution " class="img-fluid" />
+                            <img src="<?= base_url('assets/img/configs/' . $config->hero_banner_image)  ?>" alt="hero hero-it-solution " class="img-fluid" />
                             <div class="dots">
-                                <img src="<?= base_url('assets/img/hero/' . $config->hero_dot_image1) ?>" alt="dot" class="dot-1" />
-                                <img src="<?= base_url('assets/img/hero/' . $config->hero_dot_image2) ?>" alt="dot" class="dot-2" />
+                                <img src="<?= base_url('assets/img/configs/' . $config->hero_dot_image1) ?>" alt="dot" class="dot-1" />
+                                <img src="<?= base_url('assets/img/configs/' . $config->hero_dot_image2) ?>" alt="dot" class="dot-2" />
                             </div>
                             <div class="bubble">
                                 <span class="bubble-1"></span>

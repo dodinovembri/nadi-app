@@ -6,28 +6,48 @@ CREATE TABLE `configuration`(
 	`modified_at` datetime NULL,
 	`creator_id` varchar(36) NULL,
 	`modifier_id` varchar(36) NULL,
-	`title` varchar(100) null,
-	`keyword` text null,
+    `faveicon` varchar(256) null,
 	`author` varchar(100) null,
-	`text1_status` tinyint default 1,
-	`text1_text` varchar(150) null,
-    `text2_status` tinyint default 1,
-	`text2_text` varchar(100) null,
-	`header_top_status` tinyint default 1,
-    `frontend_logo_name` varchar(256) null,
-    `extranet_logo_name` varchar(256) null,
-    `phone` varchar(36) null,
-	`header_middle_status` tinyint default 1,
-	`guarantee_status` tinyint default 1,
-	`promotion_status` tinyint default 1,
-	`product_new_arrival_status` tinyint default 1,
-	`support_status` tinyint default 1,
-	`blog_status` tinyint default 1,
-	`brand_status` tinyint default 1,
-	`address` text NULL,
-	`email` text NULL,
-	`working_day` text NULL,
-	`description` text NULL,
+	`description` text null,
+	`title` varchar(100) null,
+	`hero_background_image` varchar(256) null
+	`hero_text1` varchar(256) null
+	`hero_text2` varchar(256) null
+	`hero_text_button1` varchar(100) null
+	`demo_url` text null,
+	`hero_text_button2` varchar(100) null
+	`hero_banner_image` varchar(256) null
+	`hero_dot_image1` varchar(256) null
+	`hero_dot_image2` varchar(256) null
+	`service_text1` varchar(256) null
+	`service_text2` varchar(256) null
+	`service_background_image` varchar(256) null
+	`pricing_text1` varchar(256) null
+	`pricing_text2` varchar(256) null
+	`pricing_text3` text null,
+	`pricing_text_button_daily` varchar(100) null
+	`pricing_text_button_monthly` varchar(100) null
+	`pricing_text_button_yearly` varchar(100) null
+	`pricing_text1_daily` varchar(256) null
+	`pricing_text2_daily` varchar(256) null
+	`pricing_text3_daily` varchar(256) null
+	`pricing_text4_daily` varchar(256) null
+	`pricing_text_button_trial` varchar(100) null
+	`pricing_text1_monthly` varchar(256) null
+	`pricing_text2_monthly` varchar(256) null
+	`pricing_text3_monthly` varchar(256) null
+	`pricing_text4_daily` varchar(256) null
+	`pricing_text1_yearly` varchar(256) null
+	`pricing_text2_yearly` varchar(256) null
+	`pricing_text3_yearly` varchar(256) null
+	`pricing_text4_yearly` varchar(256) null
+	`subscribe_text1` varchar(256) null
+	`subscribe_text2` varchar(256) null
+	`subscribe_text3` varchar(256) null
+	`subscribe_text_button1` varchar(100) null
+	`subscribe_text_watch_demo` varchar(256) null
+	`brand_text1` varchar(256) null
+	`brand_text2` varchar(256) null
 	`copyright` varchar(256) null
 )
 ```
