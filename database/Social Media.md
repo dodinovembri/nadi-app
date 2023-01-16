@@ -7,7 +7,7 @@ CREATE TABLE `social_media`(
 	`creator_id` varchar(36) NULL,
 	`modifier_id` varchar(36) NULL,
 	`name` varchar(256) null,
-	`icon` varchar(256) null,
+	`image` varchar(256) null,
 	`link` text null
 )
 ```
