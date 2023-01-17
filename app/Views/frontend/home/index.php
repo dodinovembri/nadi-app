@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--favicon icon-->
-    <link rel="icon" href="<?= base_url('assets/img/logo/'. $config->faveicon) ?>" type="image/png" sizes="16x16">
+    <link rel="icon" href="<?= base_url('assets/img/logo/' . $config->faveicon) ?>" type="image/png" sizes="16x16">
 
     <!--meta-->
     <meta name="author" content="<?= $config->author ?>">
@@ -31,7 +31,7 @@
     <!--preloader start-->
     <div id="preloader">
         <div class="preloader-wrap">
-            <img src="<?= base_url('assets/img/logo/'. $config->faveicon) ?>" alt="logo" class="img-fluid preloader-icon">
+            <img src="<?= base_url('assets/img/logo/' . $config->faveicon) ?>" alt="logo" class="img-fluid preloader-icon">
             <div class="loading-bar"></div>
         </div>
     </div>
@@ -108,7 +108,7 @@
         <div class="style-guide">
 
             <!--pricing section start-->
-            <section class="pricing-section position-relative overflow-hidden bg-dark text-white pt-80" style="background: url(<?= base_url('assets/img/pricing/'.$config->service_background_image) ?>'assets/img/page-header-bg.svg')no-repeat center center">
+            <section class="pricing-section position-relative overflow-hidden bg-dark text-white pt-80" style="background: url(<?= base_url('assets/img/pricing/' . $config->service_background_image) ?>'assets/img/page-header-bg.svg')no-repeat center center">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-6 col-md-12">
@@ -234,7 +234,7 @@
                 <div class="row">
                     <ul class="brand-logo-grid list-unstyled">
                         <?php foreach ($brands as $key => $value) { ?>
-                            <li><img src="<?= base_url('assets/img/brands/'. $value->image) ?>" alt="brand logo" /></li>
+                            <li><img src="<?= base_url('assets/img/brands/' . $value->image) ?>" alt="brand logo" /></li>
                         <?php } ?>
                     </ul>
                 </div>
@@ -242,35 +242,7 @@
         </section>
         <!-- brand end -->
 
-        <!--footer section start-->
-        <footer class="footer-section">
-            <!--footer bottom start-->
-            <div class="footer-bottom  bg-gradient text-white py-4">
-                <div class="container">
-                    <div class="row justify-content-between align-items-center">
-                        <div class="col-md-7 col-lg-7">
-                            <div class="copyright-text">
-                                <p class="mb-lg-0 mb-md-0"><?= $config->copyright ?></p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="footer-single-col text-start text-lg-end text-md-end">
-                                <ul class="list-unstyled list-inline footer-social-list mb-0">
-                                    <?php foreach ($social_medias as $key => $value) { ?>
-                                        <li class="list-inline-item"><a href="<?= $value->link ?>"><i class="<?= $value->icon ?>fab fa-facebook-f"></i></a></li>
-                                    <?php } ?>
-                                    <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li class="list-inline-item"><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                                    <li class="list-inline-item"><a href="#"><i class="fab fa-github"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--footer bottom end-->
-        </footer>
-        <!--footer section end-->
+        <?= $this->include('frontend/components/footer') ?>
     </div>
 
     <!--build:js-->

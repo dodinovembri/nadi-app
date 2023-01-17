@@ -10,6 +10,8 @@ CREATE TABLE `configuration`(
 	`author` varchar(100) null,
 	`description` text null,
 	`title` varchar(100) null,
+	`logo_white` varchar(256) null,
+	`logo_black` varchar(256) null,
 	`hero_background_image` varchar(256) null,
 	`hero_text1` varchar(256) null,
 	`hero_text2` varchar(256) null,
