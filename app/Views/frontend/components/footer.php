@@ -8,9 +8,9 @@
                         <div class="col-md-8 col-lg-4 mb-md-4 mb-lg-0">
                             <div class="footer-single-col">
                                 <div class="footer-single-col mb-4">
-                                    <img src="<?= base_url('assets/img/logo/'. $config->logo_white) ?>logo-white.png" alt="logo" class="img-fluid logo-white">
+                                    <img src="<?= base_url('assets/img/logo/'. $config->logo_white) ?>" alt="logo" class="img-fluid logo-white">
                                 </div>
-                                <p><?= $config->footer_text1 ?>Our latest news, articles, and resources, we will sent to your inbox weekly.</p>
+                                <p><?= $config->footer_text1 ?></p>
                                 <form class="newsletter-form position-relative d-block d-lg-flex d-md-flex">
                                     <input type="text" class="input-newsletter form-control me-2" placeholder="Enter your email" name="email" required="" autocomplete="off">
                                     <input type="submit" value="Subscribe" data-wait="Please wait..." class="btn btn-primary mt-3 mt-lg-0 mt-md-0">
@@ -26,7 +26,7 @@
                                 </div>
                                 <div class="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
                                     <div class="footer-single-col">
-                                        <h3>Primary Pages</h3>
+                                        <h3></h3>
                                         <ul class="list-unstyled footer-nav-list mb-lg-0">
                                             <li><a href="index-2.html" class="text-decoration-none">Home</a></li>
                                             <li><a href="about-us.html" class="text-decoration-none">About Us</a></li>
@@ -37,7 +37,7 @@
                                 </div>
                                 <div class="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
                                     <div class="footer-single-col">
-                                        <h3>Pages</h3>
+                                        <h3></h3>
                                         <ul class="list-unstyled footer-nav-list mb-lg-0">
                                             <li><a href="pricing.html" class="text-decoration-none">Pricing</a></li>
                                             <li><a href="blog.html" class="text-decoration-none">Blog</a></li>

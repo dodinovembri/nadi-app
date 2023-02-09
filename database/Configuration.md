@@ -50,6 +50,7 @@ CREATE TABLE `configuration`(
 	`subscribe_text_watch_demo` varchar(256) null,
 	`brand_text1` varchar(256) null,
 	`brand_text2` varchar(256) null,
+	`footer_text1` varchar(256) null,
 	`copyright` varchar(256) null
 )
 ```
