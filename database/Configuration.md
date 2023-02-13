@@ -19,8 +19,6 @@ CREATE TABLE `configuration`(
 	`demo_url` text null,
 	`hero_text_button2` varchar(100) null,
 	`hero_banner_image` varchar(256) null,
-	`hero_dot_image1` varchar(256) null,
-	`hero_dot_image2` varchar(256) null,
 	`service_text1` varchar(256) null,
 	`service_text2` varchar(256) null,
 	`service_background_image` varchar(256) null,

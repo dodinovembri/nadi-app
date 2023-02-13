@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `brand` (
-  `id` varchar(36) NOT NULL DEFAULT uuid(),
+  `id` varchar(36) NOT NULL DEFAULT (uuid()),
   `status` tinyint(4) NOT NULL,
   `created_at` datetime NOT NULL,
   `modified_at` datetime DEFAULT NULL,
@@ -56,7 +56,7 @@ INSERT INTO `brand` (`id`, `status`, `created_at`, `modified_at`, `creator_id`, 
 --
 
 CREATE TABLE `configuration` (
-  `id` varchar(36) NOT NULL DEFAULT uuid(),
+  `id` varchar(36) NOT NULL DEFAULT (uuid()),
   `status` tinyint(4) NOT NULL,
   `created_at` datetime NOT NULL,
   `modified_at` datetime DEFAULT NULL,
@@ -124,7 +124,7 @@ INSERT INTO `configuration` (`id`, `status`, `created_at`, `modified_at`, `creat
 --
 
 CREATE TABLE `feature` (
-  `id` varchar(36) NOT NULL DEFAULT uuid(),
+  `id` varchar(36) NOT NULL DEFAULT (uuid()),
   `status` tinyint(4) NOT NULL,
   `created_at` datetime NOT NULL,
   `modified_at` datetime DEFAULT NULL,
@@ -155,7 +155,7 @@ INSERT INTO `feature` (`id`, `status`, `created_at`, `modified_at`, `creator_id`
 --
 
 CREATE TABLE `service` (
-  `id` varchar(36) NOT NULL DEFAULT uuid(),
+  `id` varchar(36) NOT NULL DEFAULT (uuid()),
   `status` tinyint(4) NOT NULL,
   `created_at` datetime NOT NULL,
   `modified_at` datetime DEFAULT NULL,
@@ -185,7 +185,7 @@ INSERT INTO `service` (`id`, `status`, `created_at`, `modified_at`, `creator_id`
 --
 
 CREATE TABLE `social_media` (
-  `id` varchar(36) NOT NULL DEFAULT uuid(),
+  `id` varchar(36) NOT NULL DEFAULT (uuid()),
   `status` tinyint(4) NOT NULL,
   `created_at` datetime NOT NULL,
   `modified_at` datetime DEFAULT NULL,
@@ -203,7 +203,7 @@ CREATE TABLE `social_media` (
 --
 
 CREATE TABLE `subscribe_feature` (
-  `id` varchar(36) NOT NULL DEFAULT uuid(),
+  `id` varchar(36) NOT NULL DEFAULT (uuid()),
   `status` tinyint(4) NOT NULL,
   `created_at` datetime NOT NULL,
   `modified_at` datetime DEFAULT NULL,
