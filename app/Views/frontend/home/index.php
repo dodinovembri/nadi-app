@@ -59,14 +59,6 @@
                     <div class="col-lg-6">
                         <div class="hero-img position-relative mt-5 mt-lg-0">
                             <img src="<?= base_url('assets/img/configs/' . $config->hero_banner_image)  ?>" alt="hero hero-it-solution " class="img-fluid" />
-                            <div class="dots">
-                                <img src="<?= base_url('assets/img/configs/' . $config->hero_dot_image1) ?>" alt="dot" class="dot-1" />
-                                <img src="<?= base_url('assets/img/configs/' . $config->hero_dot_image2) ?>" alt="dot" class="dot-2" />
-                            </div>
-                            <div class="bubble">
-                                <span class="bubble-1"></span>
-                                <span class="bubble-2"></span>
-                            </div>
                         </div>
                     </div>
                 </div>
