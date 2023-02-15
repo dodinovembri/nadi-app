@@ -67,7 +67,7 @@
         <!-- hero section end-->
 
         <!-- services start -->
-        <section class="services-icon ptb-80">
+        <section class="services-icon ptb-80" id="service">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-md-10">
@@ -97,7 +97,7 @@
         <!-- services end -->
 
         <!-- price start-->
-        <div class="style-guide">
+        <div class="style-guide" id="pricing">
 
             <!--pricing section start-->
             <section class="pricing-section position-relative overflow-hidden bg-dark text-white pt-80" style="background: url(<?= base_url('assets/img/pricing/' . $config->service_background_image) ?>'assets/img/page-header-bg.svg')no-repeat center center">
