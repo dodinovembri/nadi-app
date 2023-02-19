@@ -22,7 +22,7 @@
                     </div>
 
                     <div class="action-btns text-end me-5 me-lg-0 d-none d-md-block d-lg-block">
-                        <a href="#" class="btn btn-link text-decoration-none me-2">Sign In</a>
+                        <a href="<?= base_url('ext-login') ?>" class="btn btn-link text-decoration-none me-2">Sign In</a>
                         <a href="#" class="btn btn-primary">Get Started</a>
                     </div>
                 </div>
