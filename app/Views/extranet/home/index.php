@@ -32,7 +32,7 @@
                             <div class="card-body text-center"><i class="i-Checkout-Basket"></i>
                                 <div class="content">
                                     <p class="text-muted mt-2 mb-0">Orders</p>
-                                    <p class="text-primary text-24 line-height-1 mb-2"><?= $count_order ?></p>
+                                    <p class="text-primary text-24 line-height-1 mb-2"></p>
                                 </div>
                             </div>
                         </div>
@@ -42,7 +42,7 @@
                             <div class="card-body text-center"><i class="i-Add-User"></i>
                                 <div class="content">
                                     <p class="text-muted mt-2 mb-0">Customers</p>
-                                    <p class="text-primary text-24 line-height-1 mb-2"><?= $count_customer ?></p>
+                                    <p class="text-primary text-24 line-height-1 mb-2"></p>
                                 </div>
                             </div>
                         </div>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Product Category | Dias Project</title>
+    <title>prospective-customer | Dias Project</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,700,800,900" rel="stylesheet" />
     <link href="<?= base_url('assets/extranet/css/themes/lite-purple.min.css') ?>" rel="stylesheet" />
     <link href="<?= base_url('assets/extranet/css/plugins/perfect-scrollbar.min.css') ?>" rel="stylesheet" />
@@ -15,20 +15,18 @@
 
 <body class="text-left">
     <div class="app-admin-wrap layout-sidebar-large">
-        <!-- Header & Sidebar -->
         <?= $this->include('extranet/components/header') ?>
         <?= $this->include('extranet/components/sidebar') ?>
-        <!-- Main -->
         <div class="main-content-wrap sidenav-open d-flex flex-column">
             <div class="main-content">
                 <div class="breadcrumb">
-                    <h1>Product Category</h1>
+                    <h1>prospective-customer</h1>
                     <ul>
-                        <li><a href="#">Product Category</a></li>
+                        <li><a href="#">prospective-customer</a></li>
                     </ul>
                 </div>
                 <div class="separator-breadcrumb border-top"></div>
-                <a href="<?= base_url('extranet/product-category/create') ?>"><button class="btn btn-primary ripple" type="button">Create New</button><br><br></a>
+                <a href="<?= base_url('extranet/prospective-customer/create') ?>"><button class="btn btn-primary ripple" type="button">Create New</button><br><br></a>
                 <div class="row mb-4">
                     <div class="col-md-12 mb-4">
                         <?= $this->include('extranet/components/flashmessage') ?>
@@ -39,20 +37,20 @@
                                         <thead>
                                             <tr>
                                                 <th>No</th>
-                                                <th>Code</th>
-                                                <th>Name</th>
+                                                <th>Question</th>
+                                                <th>Answer</th>
                                                 <th>Status</th>
                                                 <th>Actions</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <?php $no = 0;
-                                            foreach ($product_categories as $key => $value) {
+                                            foreach ($prospective_customers as $key => $value) {
                                                 $no++; ?>
                                                 <tr>
                                                     <td><?= $no ?></td>
-                                                    <td><?= $value->code ?></td>
-                                                    <td><?= $value->name ?></td>
+                                                    <td><?= $value->question ?></td>
+                                                    <td><?= $value->answer ?></td>
                                                     <td>
                                                         <?php if ($value->status == 1) {
                                                             echo "Active";
@@ -61,22 +59,22 @@
                                                         } ?>
                                                     </td>
                                                     <td>
-                                                        <a class="text-success mr-2" href="<?= base_url('extranet/product-category/show/' . $value->id) ?>">
+                                                        <a class="text-success mr-2" href="<?= base_url('extranet/prospective-customer/show/' . $value->id) ?>">
                                                             <i class="nav-icon i-Eye font-weight-bold"></i>
                                                         </a>
-                                                        <a class="text-success mr-2" href="<?= base_url('extranet/product-category/edit/' . $value->id) ?>">
+                                                        <a class="text-success mr-2" href="<?= base_url('extranet/prospective-customer/edit/' . $value->id) ?>">
                                                             <i class="nav-icon i-Pen-2 font-weight-bold"></i>
                                                         </a>
                                                         <a class="text-danger mr-2" href="#">
-                                                            <i class="nav-icon i-Close-Window font-weight-bold" data-toggle="modal" data-target="#deleteModal<?= $value->id ?>"></i>
+                                                            <i class="nav-icon i-Close-Window font-weight-bold" data-toggle="modal" data-target="#exampleModal<?= $value->id ?>"></i>
                                                         </a>
                                                     </td>
                                                 </tr>
-                                                <div class="modal fade" id="deleteModal<?= $value->id ?>" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                                                <div class="modal fade" id="exampleModal<?= $value->id ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog" role="document">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
-                                                                <h5 class="modal-title" id="deleteModalLabel">Delete Data</h5>
+                                                                <h5 class="modal-title" id="exampleModalLabel">Delete Data</h5>
                                                                 <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                                                             </div>
                                                             <div class="modal-body">
@@ -84,7 +82,7 @@
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                                                                <a href="<?= base_url('extranet/product-category/destroy/' . $value->id) ?>"><button class="btn btn-primary ml-2" type="button">Delete</button></a>
+                                                                <a href="<?= base_url('extranet/prospective-customer/destroy/' . $value->id) ?>"><button class="btn btn-primary ml-2" type="button">Delete</button></a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -98,7 +96,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Footer -->
             <?= $this->include('extranet/components/footer') ?>
         </div>
     </div>

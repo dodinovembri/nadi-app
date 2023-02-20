@@ -51,6 +51,26 @@ $routes->get('ext-logout', [\App\Controllers\Extranet\Authcontroller::class, 'lo
 $routes->group('extranet', ['filter' => 'auth'], function($routes){
 	$routes->get('/', [\App\Controllers\Extranet\Extranethomecontroller::class, 'index']);
 
+	$routes->group('prospective-customer', function ($routes) {
+		$routes->get('/', [\App\Controllers\Extranet\ProspectiveCustomerController::class, 'index']);
+		$routes->get('create', [\App\Controllers\Extranet\ProspectiveCustomerController::class, 'create']);
+		$routes->post('store', [\App\Controllers\Extranet\ProspectiveCustomerController::class, 'store']);
+		$routes->get('show/(:any)', [\App\Controllers\Extranet\ProspectiveCustomerController::class, 'show']);
+		$routes->get('edit/(:any)', [\App\Controllers\Extranet\ProspectiveCustomerController::class, 'edit']);
+		$routes->post('update/(:any)', [\App\Controllers\Extranet\ProspectiveCustomerController::class, 'update']);
+		$routes->get('destroy/(:any)', [\App\Controllers\Extranet\ProspectiveCustomerController::class, 'destroy']);
+    });	
+
+	$routes->group('customer-type', function ($routes) {
+		$routes->get('/', [\App\Controllers\Extranet\CustomerTypeController::class, 'index']);
+		$routes->get('create', [\App\Controllers\Extranet\CustomerTypeController::class, 'create']);
+		$routes->post('store', [\App\Controllers\Extranet\CustomerTypeController::class, 'store']);
+		$routes->get('show/(:any)', [\App\Controllers\Extranet\CustomerTypeController::class, 'show']);
+		$routes->get('edit/(:any)', [\App\Controllers\Extranet\CustomerTypeController::class, 'edit']);
+		$routes->post('update/(:any)', [\App\Controllers\Extranet\CustomerTypeController::class, 'update']);
+		$routes->get('destroy/(:any)', [\App\Controllers\Extranet\CustomerTypeController::class, 'destroy']);
+	});
+
 	$routes->group('configuration', function ($routes) {
 		$routes->get('/', [\App\Controllers\Extranet\Configurationcontroller::class, 'index']);
 		$routes->post('update/(:any)', [\App\Controllers\Extranet\Configurationcontroller::class, 'update']);
@@ -66,16 +86,6 @@ $routes->group('extranet', ['filter' => 'auth'], function($routes){
 		$routes->get('destroy/(:any)', [\App\Controllers\Extranet\Socialmediacontroller::class, 'destroy']);
     });
 
-	$routes->group('product-category', function ($routes) {
-		$routes->get('/', [\App\Controllers\Extranet\Productcategorycontroller::class, 'index']);
-		$routes->get('create', [\App\Controllers\Extranet\Productcategorycontroller::class, 'create']);
-		$routes->post('store', [\App\Controllers\Extranet\Productcategorycontroller::class, 'store']);
-		$routes->get('show/(:any)', [\App\Controllers\Extranet\Productcategorycontroller::class, 'show']);
-		$routes->get('edit/(:any)', [\App\Controllers\Extranet\Productcategorycontroller::class, 'edit']);
-		$routes->post('update/(:any)', [\App\Controllers\Extranet\Productcategorycontroller::class, 'update']);
-		$routes->get('destroy/(:any)', [\App\Controllers\Extranet\Productcategorycontroller::class, 'destroy']);
-    });
-	
 	$routes->group('banner', function ($routes) {
 		$routes->get('/', [\App\Controllers\Extranet\Bannercontroller::class, 'index']);
 		$routes->post('update/(:any)', [\App\Controllers\Extranet\Bannercontroller::class, 'update']);
