@@ -37,7 +37,10 @@ $routes->set404Override();
 $routes->get('/', [\App\Controllers\Frontend\Homecontroller::class, 'index']);
 $routes->get('services', [\App\Controllers\Frontend\Servicescontroller::class, 'index']);
 $routes->get('pricing', [\App\Controllers\Frontend\Pricingcontroller::class, 'index']);
+
 $routes->get('our-apps', [\App\Controllers\Frontend\Ourappscontroller::class, 'index']);
+$routes->get('our-apps/(:any)', [\App\Controllers\Frontend\Ourappscontroller::class, 'show']);
+
 $routes->get('about-us', [\App\Controllers\Frontend\Aboutuscontroller::class, 'index']);
 $routes->get('contact-us', [\App\Controllers\Frontend\Contactuscontroller::class, 'index']);
 $routes->get('login', [\App\Controllers\Frontend\Authcontroller::class, 'index']);

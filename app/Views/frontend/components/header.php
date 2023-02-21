@@ -15,7 +15,7 @@
                             <li><a class="nav-link" href="<?= base_url('/') ?>">Home</a></li>
                             <li><a href="#service" class="nav-link">Services</a></li>
                             <li><a href="#pricing" class="nav-link">Pricing</a></li>
-                            <li><a href="#" class="nav-link">Our Apps</a></li>
+                            <li><a href="<?= base_url('our-apps') ?>" class="nav-link">Our Apps</a></li>
                             <li><a href="#" class="nav-link">About Us</a></li>
                             <li><a href="#" class="nav-link">Contact Us</a></li>
                         </ul>
