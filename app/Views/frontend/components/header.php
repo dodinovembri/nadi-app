@@ -31,7 +31,7 @@
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBackdrop">
                 <div class="offcanvas-header d-flex align-items-center mt-4">
                     <a href="index-2.html" class="d-flex align-items-center mb-md-0 text-decoration-none">
-                        <img src="assets/img/logo-color.png" alt="logo" class="img-fluid ps-2" />
+                        <img src="<?= base_url('assets/img/logo/logo-color-nadi.png') ?>" alt="logo" class="img-fluid ps-2" />
                     </a>
                     <button type="button" class="close-btn text-danger" data-bs-dismiss="offcanvas" aria-label="Close">
                         <i class="far fa-close"></i>
@@ -42,7 +42,7 @@
                         <li><a class="nav-link" href="<?= base_url('/') ?>">Home</a></li>
                         <li><a href="#service" class="nav-link">Services</a></li>
                         <li><a href="#pricing" class="nav-link">Pricing</a></li>
-                        <li><a href="#" class="nav-link">Our Apps</a></li>
+                        <li><a href="<?= base_url('our-apps') ?>" class="nav-link">Our Apps</a></li>
                         <li><a href="#" class="nav-link">About Us</a></li>
                         <li><a href="#" class="nav-link">Contact Us</a></li>
                     </ul>

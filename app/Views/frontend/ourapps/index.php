@@ -22,32 +22,29 @@
 
 
     <!--Bootstrap css-->
-    <link rel="stylesheet" href="assets/apps/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?= base_url('/') ?>assets/apps/css/bootstrap.min.css">
     <!--Bootstrap slider css-->
-    <link rel="stylesheet" href="assets/apps/css/bootstrap-slider.min.css">
+    <link rel="stylesheet" href="<?= base_url('/') ?>assets/apps/css/bootstrap-slider.min.css">
     <!--Magnific popup css-->
-    <link rel="stylesheet" href="assets/apps/css/magnific-popup.css">
+    <link rel="stylesheet" href="<?= base_url('/') ?>assets/apps/css/magnific-popup.css">
     <!--Themify icon css-->
-    <link rel="stylesheet" href="assets/apps/css/themify-icons.css">
+    <link rel="stylesheet" href="<?= base_url('/') ?>assets/apps/css/themify-icons.css">
     <!--mega menu js-->
-    <link rel="stylesheet" href="assets/apps/css/hs.megamenu.css">
+    <link rel="stylesheet" href="<?= base_url('/') ?>assets/apps/css/hs.megamenu.css">
     <!--animated css-->
-    <link rel="stylesheet" href="assets/apps/css/animate.min.css">
+    <link rel="stylesheet" href="<?= base_url('/') ?>assets/apps/css/animate.min.css">
     <!--ytplayer css-->
-    <link rel="stylesheet" href="assets/apps/css/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" href="<?= base_url('/') ?>assets/apps/css/jquery.mb.YTPlayer.min.css">
     <!--Owl carousel css-->
-    <link rel="stylesheet" href="assets/apps/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/apps/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="<?= base_url('/') ?>assets/apps/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="<?= base_url('/') ?>assets/apps/css/owl.theme.default.min.css">
     <!--custom css-->
-    <link rel="stylesheet" href="assets/apps/css/style.css">
+    <link rel="stylesheet" href="<?= base_url('/') ?>assets/apps/css/style.css">
     <!--responsive css-->
-    <link rel="stylesheet" href="assets/apps/css/responsive.css">
+    <link rel="stylesheet" href="<?= base_url('/') ?>assets/apps/css/responsive.css">
 
     <!--favicon icon-->
     <link rel="icon" href="<?= base_url('assets/assets/apps/img/favicon.png') ?>" type="image/png" sizes="16x16">
-
-    <!--title-->
-    <title>Quiety - Software & IT Solutions HTML Template</title>
 
     <!--build:css-->
     <link rel="stylesheet" href="<?= base_url('assets/css/main.css') ?>">
@@ -74,10 +71,8 @@
             <div class="container">
                 <div class="row align-items-center justify-content-lg-between">
                     <div class="col-lg-6 col-md-12">
-                        <div class="section-heading">
-                            <h2>We Collaborate with Top Software Company</h2>
-                            <p>Dynamically pursue convergence rather than 24/7 process improvements
-                                develop end-to-end customer service action items.</p>
+                        <div class="section-heading pt-60">
+                            <h3>Our Application</h3>
                         </div>
                     </div>
                 </div>
@@ -108,31 +103,31 @@
 
 
     <!--jQuery-->
-    <script src="assets/apps/js/jquery-3.4.1.min.js"></script>
+    <script src="<?= base_url('/') ?>assets/apps/js/jquery-3.4.1.min.js"></script>
     <!--Popper js-->
-    <script src="assets/apps/js/popper.min.js"></script>
+    <script src="<?= base_url('/') ?>assets/apps/js/popper.min.js"></script>
     <!--Bootstrap js-->
-    <script src="assets/apps/js/bootstrap.min.js"></script>
+    <script src="<?= base_url('/') ?>assets/apps/js/bootstrap.min.js"></script>
     <!--Bootstrap slider js-->
-    <script src="assets/apps/js/bootstrap-slider.min.js"></script>
+    <script src="<?= base_url('/') ?>assets/apps/js/bootstrap-slider.min.js"></script>
     <!--countdown js-->
-    <script src="assets/apps/js/jquery.countdown.min.js"></script>
+    <script src="<?= base_url('/') ?>assets/apps/js/jquery.countdown.min.js"></script>
     <!--jquery easing js-->
-    <script src="assets/apps/js/jquery.easing.min.js"></script>
+    <script src="<?= base_url('/') ?>assets/apps/js/jquery.easing.min.js"></script>
     <!--jquery ytplayer js-->
-    <script src="assets/apps/js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="<?= base_url('/') ?>assets/apps/js/jquery.mb.YTPlayer.min.js"></script>
     <!--wow js-->
-    <script src="assets/apps/js/wow.min.js"></script>
+    <script src="<?= base_url('/') ?>assets/apps/js/wow.min.js"></script>
     <!--owl carousel js-->
-    <script src="assets/apps/js/owl.carousel.min.js"></script>
+    <script src="<?= base_url('/') ?>assets/apps/js/owl.carousel.min.js"></script>
     <!--Magnific popup js-->
-    <script src="assets/apps/js/jquery.magnific-popup.min.js"></script>
+    <script src="<?= base_url('/') ?>assets/apps/js/jquery.magnific-popup.min.js"></script>
     <!--headroom js-->
-    <script src="assets/apps/js/headroom.min.js"></script>
+    <script src="<?= base_url('/') ?>assets/apps/js/headroom.min.js"></script>
     <!--megamenu js-->
-    <script src="assets/apps/js/hs.megamenu.js"></script>
+    <script src="<?= base_url('/') ?>assets/apps/js/hs.megamenu.js"></script>
     <!--custom js-->
-    <script src="assets/apps/js/scripts.js"></script>
+    <script src="<?= base_url('/') ?>assets/apps/js/scripts.js"></script>
 
 
     <!--build:js-->
