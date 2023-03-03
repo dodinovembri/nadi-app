@@ -2,28 +2,8 @@
 <html lang="en">
 
 <head>
-    <!--required meta tags-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--favicon icon-->
-    <link rel="icon" href="<?= base_url('assets/img/logo/' . $config->faveicon) ?>" type="image/png" sizes="16x16">
-
-    <!--meta-->
-    <meta name="author" content="<?= $config->author ?>">
-    <meta name="description" content="<?= $config->description ?>">
-
-    <!--title-->
+    <?= $this->include('frontend/components/styles') ?>
     <title><?= $config->title ?></title>
-
-    <!--build:css-->
-    <link rel="stylesheet" href="<?= base_url('assets/css/main.css') ?>">
-    <!-- endbuild -->
-
-    <!--custom css start-->
-    <link rel="stylesheet" href="<?= base_url('assets/css/custom.css') ?>">
-    <!--custom css end-->
-
 </head>
 
 <body>
@@ -31,7 +11,7 @@
     <!--preloader start-->
     <div id="preloader">
         <div class="preloader-wrap">
-            <img src="<?= base_url('assets/img/logo/' . $config->faveicon) ?>" alt="logo" class="img-fluid preloader-icon">
+            <img src="<?= base_url('assets/img/logo/' . $config->favicon) ?>" alt="logo" class="img-fluid preloader-icon">
             <div class="loading-bar"></div>
         </div>
     </div>
@@ -189,20 +169,11 @@
                                 <a href="<?= $config->demo_url ?>http://www.youtube.com/watch?v=hAP2QF--2Dg" class="text-decoration-none popup-youtube d-inline-flex align-items-center watch-now-btn ms-lg-3 ms-md-3 mt-3 mt-lg-0"> <i class="fas fa-play"></i><?= $config->subscribe_text_watch_demo ?></a>
                             </div>
                             <ul class="nav justify-content-center subscribe-feature-list mt-4" data-aos="fade-up" data-aos-delay="100">
-                                <?php foreach ($subscribe_features as $key => $value) { ?>
+                                <?php foreach ($features as $key => $value) { ?>
                                     <li class="nav-item">
-                                        <span><i class="far fa-check-circle text-primary me-2"></i><?= $value->description ?>Free 14-day trial</span>
+                                        <span><i class="far fa-check-circle text-primary me-2"></i><?= $value->description ?></span>
                                     </li>
                                 <?php } ?>
-                                <li class="nav-item">
-                                    <span><i class="far fa-check-circle text-primary me-2"></i>No credit card required</span>
-                                </li>
-                                <li class="nav-item">
-                                    <span><i class="far fa-check-circle text-primary me-2"></i>Support 24/7</span>
-                                </li>
-                                <li class="nav-item">
-                                    <span><i class="far fa-check-circle text-primary me-2"></i>Cancel anytime</span>
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -236,17 +207,8 @@
 
         <?= $this->include('frontend/components/footer') ?>
     </div>
-
-    <!--build:js-->
-    <script src="<?= base_url('assets/js/vendors/jquery-3.6.0.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/vendors/bootstrap.bundle.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/vendors/swiper-bundle.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/vendors/jquery.magnific-popup.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/vendors/parallax.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/vendors/aos.js') ?>"></script>
-    <script src="<?= base_url('assets/js/vendors/massonry.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/app.js') ?>"></script>
-    <!--endbuild-->
+    <!-- scripts -->
+    <?= $this->include('frontend/components/scripts') ?>
 </body>
 
 </html>

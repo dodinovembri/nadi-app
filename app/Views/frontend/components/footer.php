@@ -24,9 +24,6 @@
                         <div class="col-md-4 col-lg-4">
                             <div class="footer-single-col text-start text-lg-end text-md-end">
                                 <ul class="list-unstyled list-inline footer-social-list mb-0">
-                                    <?php foreach ($social_medias as $key => $value) { ?>
-                                        <li class="list-inline-item"><a href="<?= $value->link ?>"><i class="<?= $value->icon ?>fab fa-facebook-f"></i></a></li>
-                                    <?php } ?>
                                     <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
                                     <li class="list-inline-item"><a href="#"><i class="fab fa-dribbble"></i></a></li>
                                     <li class="list-inline-item"><a href="#"><i class="fab fa-github"></i></a></li>
