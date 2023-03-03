@@ -4,5 +4,5 @@
     <link rel="icon" href="<?= base_url('assets/images/logo/' . $config->favicon) ?>" type="image/png" sizes="16x16">
     <meta name="author" content="<?= $config->author ?>">
     <meta name="description" content="<?= $config->description ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/main.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/custom.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/frontend/css/main.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/frontend/css/custom.css') ?>">

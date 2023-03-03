@@ -10,7 +10,7 @@
 
 
 
-                                <p class="mb-lg-0 mb-md-0"><img src="<?= base_url('assets/img/logo/' . $config->logo_white) ?>" alt="logo" class="img-fluid logo-white"></p>
+                                <p class="mb-lg-0 mb-md-0"><img src="<?= base_url('assets/images/logo/' . $config->logo_white) ?>" alt="logo" class="img-fluid logo-white"></p>
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-4">

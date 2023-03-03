@@ -1,9 +1,13 @@
         <!--header start-->
-        <header class="main-header position-absolute w-100">
+        <?php
+        $uri = new \CodeIgniter\HTTP\URI(current_url());
+        $segment = $uri->getSegment(2);
+        ?>
+        <header class="main-header <?php if ($segment == "contact-us") { ?>w-100 z-10 <?php } else { ?>position-absolute w-100 <?php } ?>">
             <nav class="navbar navbar-expand-xl navbar-light sticky-header">
                 <div class="container d-flex align-items-center justify-content-lg-between position-relative">
                     <a href="<?= base_url('/') ?>" class="navbar-brand d-flex align-items-center mb-md-0 text-decoration-none">
-                        <img src="<?= base_url('assets/img/logo/logo-color-nadi.png') ?>" alt="logo" class="img-fluid logo-color" />
+                        <img src="<?= base_url('assets/images/logo/logo-color-nadi.png') ?>" alt="logo" class="img-fluid logo-color" />
                     </a>
 
                     <a class="navbar-toggler position-absolute right-0 border-0" href="#offcanvasWithBackdrop" role="button">
@@ -17,7 +21,7 @@
                             <li><a href="#pricing" class="nav-link">Pricing</a></li>
                             <li><a href="<?= base_url('our-apps') ?>" class="nav-link">Our Apps</a></li>
                             <li><a href="#" class="nav-link">About Us</a></li>
-                            <li><a href="#" class="nav-link">Contact Us</a></li>
+                            <li><a href="<?= base_url('contact-us') ?>" class="nav-link">Contact Us</a></li>
                         </ul>
                     </div>
 
@@ -31,7 +35,7 @@
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBackdrop">
                 <div class="offcanvas-header d-flex align-items-center mt-4">
                     <a href="index-2.html" class="d-flex align-items-center mb-md-0 text-decoration-none">
-                        <img src="<?= base_url('assets/img/logo/logo-color-nadi.png') ?>" alt="logo" class="img-fluid ps-2" />
+                        <img src="<?= base_url('assets/images/logo/logo-color-nadi.png') ?>" alt="logo" class="img-fluid ps-2" />
                     </a>
                     <button type="button" class="close-btn text-danger" data-bs-dismiss="offcanvas" aria-label="Close">
                         <i class="far fa-close"></i>

@@ -7,20 +7,13 @@
 </head>
 
 <body>
-
-    <!--preloader start-->
-    <div id="preloader">
-        <div class="preloader-wrap">
-            <img src="<?= base_url('assets/img/logo/' . $config->favicon) ?>" alt="logo" class="img-fluid preloader-icon">
-            <div class="loading-bar"></div>
-        </div>
-    </div>
-    <!--preloader end-->
+    <!-- preloader -->
+    <?= $this->include('frontend/components/preloader') ?>
     <!--main content wrapper start-->
     <div class="main-wrapper">
         <?= $this->include('frontend/components/header') ?>
         <!-- hero section start-->
-        <section class="hero-it-solution hero-nine-bg ptb-120" style="background: url(<?= base_url('assets/img/configs/' . $config->hero_background_image) ?>)no-repeat center center">
+        <section class="hero-it-solution hero-nine-bg ptb-120" style="background: url(<?= base_url('assets/images/configs/' . $config->hero_background_image) ?>)no-repeat center center">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-10">
@@ -38,7 +31,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="hero-img position-relative mt-5 mt-lg-0">
-                            <img src="<?= base_url('assets/img/configs/' . $config->hero_banner_image)  ?>" alt="hero hero-it-solution " class="img-fluid" />
+                            <img src="<?= base_url('assets/images/configs/' . $config->hero_banner_image)  ?>" alt="hero hero-it-solution " class="img-fluid" />
                         </div>
                     </div>
                 </div>
@@ -62,7 +55,7 @@
                         <div class="col-lg-4 col-md-6 p-0">
                             <div class="single-service p-lg-5 p-4 text-center mt-3 border-bottom border-end">
                                 <div class="service-icon icon-center">
-                                    <img src="<?= base_url('assets/img/services/' . $value->image) ?>" alt="service icon" width="65" height="65" />
+                                    <img src="<?= base_url('assets/images/services/' . $value->image) ?>" alt="service icon" width="65" height="65" />
                                 </div>
                                 <div class="service-info-wrap">
                                     <h3 class="h5"><?= $value->title ?></h3>
@@ -80,7 +73,7 @@
         <div class="style-guide" id="pricing">
 
             <!--pricing section start-->
-            <section class="pricing-section position-relative overflow-hidden bg-dark text-white pt-80" style="background: url(<?= base_url('assets/img/pricing/' . $config->service_background_image) ?>'assets/img/page-header-bg.svg')no-repeat center center">
+            <section class="pricing-section position-relative overflow-hidden bg-dark text-white pt-80" style="background: url(<?= base_url('assets/images/pricing/' . $config->service_background_image) ?>'assets/images/page-header-bg.svg')no-repeat center center">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-6 col-md-12">
@@ -197,7 +190,7 @@
                 <div class="row">
                     <ul class="brand-logo-grid list-unstyled">
                         <?php foreach ($brands as $key => $value) { ?>
-                            <li><img src="<?= base_url('assets/img/brands/' . $value->image) ?>" alt="brand logo" /></li>
+                            <li><img src="<?= base_url('assets/images/brands/' . $value->image) ?>" alt="brand logo" /></li>
                         <?php } ?>
                     </ul>
                 </div>

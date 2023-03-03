@@ -11,7 +11,7 @@
     <!--preloader start-->
     <div id="preloader">
         <div class="preloader-wrap">
-            <img src="assets/img/favicon.png" alt="logo" class="img-fluid preloader-icon">
+            <img src="assets/images/favicon.png" alt="logo" class="img-fluid preloader-icon">
             <div class="loading-bar"></div>
         </div>
     </div>
@@ -22,12 +22,12 @@
         <?= $this->include('frontend/components/header') ?>
 
         <!--register section start-->
-        <section class="hero-it-solution hero-nine-bg ptb-120" style="background: url(<?= base_url('assets/img/configs/' . $config->hero_background_image) ?>)no-repeat center center">
+        <section class="hero-it-solution hero-nine-bg ptb-120" style="background: url(<?= base_url('assets/images/configs/' . $config->hero_background_image) ?>)no-repeat center center">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-xl-5 col-lg-7 col-md-6 order-0 order-lg-1">
                         <div class="hero-img position-relative mt-5 mt-lg-0">
-                            <img src="<?= base_url('assets/img/configs/registration.png') ?>" alt="hero hero-it-solution " class="img-fluid" />
+                            <img src="<?= base_url('assets/images/configs/registration.png') ?>" alt="hero hero-it-solution " class="img-fluid" />
                         </div>
                     </div>
                     <div class="col-xl-7 col-lg-7 col-md-6 order-0 order-lg-1">

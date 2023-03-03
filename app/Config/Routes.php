@@ -39,7 +39,7 @@ $routes->get('/', [\App\Controllers\Frontend\HomeController::class, 'index']);
 $routes->get('services', [\App\Controllers\Frontend\ServicesController::class, 'index']);
 $routes->get('pricing', [\App\Controllers\Frontend\PricingController::class, 'index']);
 $routes->get('our-apps', [\App\Controllers\Frontend\OurappsController::class, 'index']);
-$routes->get('our-apps/(:any)', [\App\Controllers\Frontend\OurappsController::class, 'show']);
+$routes->get('our-apps/show/(:uuid)', [\App\Controllers\Frontend\OurappsController::class, 'show']);
 $routes->get('about-us', [\App\Controllers\Frontend\AboutUsController::class, 'index']);
 $routes->get('contact-us', [\App\Controllers\Frontend\ContactUsController::class, 'index']);
 $routes->get('get-started', [\App\Controllers\Frontend\GetStartedController::class, 'index']);
@@ -53,7 +53,7 @@ $routes->group('extranet', ['filter' => 'auth'], function($routes){
 
 	$routes->group('config', function ($routes) {
 		$routes->get('/', [\App\Controllers\Extranet\ConfigController::class, 'index']);
-		$routes->post('update/(:any)', [\App\Controllers\Extranet\ConfigController::class, 'update']);
+		$routes->post('update/(:uuid)', [\App\Controllers\Extranet\ConfigController::class, 'update']);
     });	
 
 });

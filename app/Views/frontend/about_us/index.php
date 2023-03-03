@@ -11,7 +11,7 @@
     <!--preloader start-->
     <div id="preloader">
         <div class="preloader-wrap">
-            <img src="assets/img/favicon.png" alt="logo" class="img-fluid preloader-icon">
+            <img src="assets/images/favicon.png" alt="logo" class="img-fluid preloader-icon">
             <div class="loading-bar"></div>
         </div>
     </div>
@@ -22,7 +22,7 @@
         <?= $this->include('frontend/components/header') ?>
 
         <!--about header section start-->
-        <section class="hero-it-solution hero-nine-bg ptb-120" style="background: url(<?= base_url('assets/img/configs/' . $config->hero_background_image) ?>)no-repeat center center">
+        <section class="hero-it-solution hero-nine-bg ptb-120" style="background: url(<?= base_url('assets/images/configs/' . $config->hero_background_image) ?>)no-repeat center center">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -36,11 +36,11 @@
                                     <a href="career.html" class="btn btn-primary mt-4 me-3">Open Positions</a>
                                     <a href="#our-team" class="btn btn-soft-primary mt-4">Meet Our Team</a>
                                 </div>
-                                <img src="assets/img/about-img-1.jpg" alt="about" class="img-fluid about-img-first mt-5 rounded-custom shadow">
+                                <img src="assets/images/about-img-1.jpg" alt="about" class="img-fluid about-img-first mt-5 rounded-custom shadow">
                             </div>
                             <div class="about-content-right">
-                                <img src="assets/img/about-img-2.jpg" alt="about" class="img-fluid mb-5 rounded-custom shadow">
-                                <img src="assets/img/about-img-3.jpg" alt="about" class="rounded-custom about-img-last shadow">
+                                <img src="assets/images/about-img-2.jpg" alt="about" class="img-fluid mb-5 rounded-custom shadow">
+                                <img src="assets/images/about-img-3.jpg" alt="about" class="rounded-custom about-img-last shadow">
                             </div>
                         </div>
                     </div>
@@ -52,7 +52,7 @@
         <!--about header section end-->
 
         <!--our story section start-->
-        <section class="our-story-section pt-60 pb-120" style="background: url('assets/img/shape/dot-dot-wave-shape.svg')no-repeat left bottom">
+        <section class="our-story-section pt-60 pb-120" style="background: url('assets/images/shape/dot-dot-wave-shape.svg')no-repeat left bottom">
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-lg-5 col-md-12 order-lg-1">
@@ -63,8 +63,8 @@
                                 materials before proactive outsourcing leverage other's vertical technology leadership. </p>
                             <div class="mt-4">
                                 <h6 class="mb-3">We Are Awarded By-</h6>
-                                <img src="assets/img/awards-01.svg" alt="awards" class="me-4 img-fluid">
-                                <img src="assets/img/awards-02.svg" alt="awards" class="img-fluid">
+                                <img src="assets/images/awards-01.svg" alt="awards" class="me-4 img-fluid">
+                                <img src="assets/images/awards-02.svg" alt="awards" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -73,10 +73,10 @@
                             <!--animated shape start-->
                             <ul class="position-absolute animate-element parallax-element shape-service d-none d-lg-block">
                                 <li class="layer" data-depth="0.02">
-                                    <img src="assets/img/color-shape/image-2.svg" alt="shape" class="img-fluid position-absolute color-shape-2 z-5">
+                                    <img src="assets/images/color-shape/image-2.svg" alt="shape" class="img-fluid position-absolute color-shape-2 z-5">
                                 </li>
                                 <li class="layer" data-depth="0.03">
-                                    <img src="assets/img/color-shape/feature-3.svg" alt="shape" class="img-fluid position-absolute color-shape-3">
+                                    <img src="assets/images/color-shape/feature-3.svg" alt="shape" class="img-fluid position-absolute color-shape-3">
                                 </li>
                             </ul>
                             <!--animated shape end-->
@@ -176,7 +176,7 @@
                                     <h6 class="mb-0">Start Tracking your Website</h6>
                                 </li>
                             </ul>
-                            <img src="assets/img/feature-img3.jpg" alt="feature image" class="img-fluid rounded-custom">
+                            <img src="assets/images/feature-img3.jpg" alt="feature image" class="img-fluid rounded-custom">
                         </div>
                     </div>
                 </div>
@@ -201,7 +201,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="team-single-wrap mb-5">
                             <div class="team-img rounded-custom">
-                                <img src="assets/img/team/team-1.jpg" alt="team" class="img-fluid position-relative">
+                                <img src="assets/images/team/team-1.jpg" alt="team" class="img-fluid position-relative">
                                 <ul class="list-unstyled team-social-list d-flex flex-column mb-0">
                                     <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                     <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -218,7 +218,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="team-single-wrap mb-5">
                             <div class="team-img rounded-custom">
-                                <img src="assets/img/team/team-2.jpg" alt="team" class="img-fluid position-relative">
+                                <img src="assets/images/team/team-2.jpg" alt="team" class="img-fluid position-relative">
                                 <ul class="list-unstyled team-social-list d-flex flex-column mb-0">
                                     <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                     <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -235,7 +235,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="team-single-wrap mb-5">
                             <div class="team-img rounded-custom">
-                                <img src="assets/img/team/team-3.jpg" alt="team" class="img-fluid position-relative">
+                                <img src="assets/images/team/team-3.jpg" alt="team" class="img-fluid position-relative">
                                 <ul class="list-unstyled team-social-list d-flex flex-column mb-0">
                                     <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                     <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -252,7 +252,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="team-single-wrap mb-5">
                             <div class="team-img rounded-custom">
-                                <img src="assets/img/team/team-4.jpg" alt="team" class="img-fluid position-relative">
+                                <img src="assets/images/team/team-4.jpg" alt="team" class="img-fluid position-relative">
                                 <ul class="list-unstyled team-social-list d-flex flex-column mb-0">
                                     <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                     <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -269,7 +269,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="team-single-wrap mb-5">
                             <div class="team-img rounded-custom">
-                                <img src="assets/img/team/team-5.jpg" alt="team" class="img-fluid position-relative">
+                                <img src="assets/images/team/team-5.jpg" alt="team" class="img-fluid position-relative">
                                 <ul class="list-unstyled team-social-list d-flex flex-column mb-0">
                                     <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                     <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -286,7 +286,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="team-single-wrap mb-5">
                             <div class="team-img rounded-custom">
-                                <img src="assets/img/team/team-6.jpg" alt="team" class="img-fluid position-relative">
+                                <img src="assets/images/team/team-6.jpg" alt="team" class="img-fluid position-relative">
                                 <ul class="list-unstyled team-social-list d-flex flex-column mb-0">
                                     <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                     <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -303,7 +303,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="team-single-wrap mb-5">
                             <div class="team-img rounded-custom">
-                                <img src="assets/img/team/team-7.jpg" alt="team" class="img-fluid position-relative">
+                                <img src="assets/images/team/team-7.jpg" alt="team" class="img-fluid position-relative">
                                 <ul class="list-unstyled team-social-list d-flex flex-column mb-0">
                                     <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                     <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -320,7 +320,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="team-single-wrap mb-5">
                             <div class="team-img rounded-custom">
-                                <img src="assets/img/team/team-8.jpg" alt="team" class="img-fluid position-relative">
+                                <img src="assets/images/team/team-8.jpg" alt="team" class="img-fluid position-relative">
                                 <ul class="list-unstyled team-social-list d-flex flex-column mb-0">
                                     <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                     <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -359,9 +359,9 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="border border-2 p-5 rounded-custom position-relative">
-                                            <img src="assets/img/testimonial/quotes-dot.svg" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
+                                            <img src="assets/images/testimonial/quotes-dot.svg" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
                                             <div class="d-flex mb-32 align-items-center">
-                                                <img src="assets/img/testimonial/1.jpg" class="img-fluid me-3 rounded" width="60" alt="user">
+                                                <img src="assets/images/testimonial/1.jpg" class="img-fluid me-3 rounded" width="60" alt="user">
                                                 <div class="author-info">
                                                     <h6 class="mb-0">Mr.Rupan Oberoi</h6>
                                                     <small>Founder and CEO at Amaara Herbs</small>
@@ -379,14 +379,14 @@
                                                 <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                                 <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                             </ul>
-                                            <img src="assets/img/testimonial/quotes.svg" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
+                                            <img src="assets/images/testimonial/quotes.svg" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="border border-2 p-5 rounded-custom position-relative">
-                                            <img src="assets/img/testimonial/quotes-dot.svg" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
+                                            <img src="assets/images/testimonial/quotes-dot.svg" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
                                             <div class="d-flex mb-32 align-items-center">
-                                                <img src="assets/img/testimonial/3.jpg" class="img-fluid me-3 rounded" width="60" alt="user">
+                                                <img src="assets/images/testimonial/3.jpg" class="img-fluid me-3 rounded" width="60" alt="user">
                                                 <div class="author-info">
                                                     <h6 class="mb-0">Oberoi R.</h6>
                                                     <small>CEO at Herbs</small>
@@ -404,15 +404,15 @@
                                                 <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                                 <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                             </ul>
-                                            <img src="assets/img/testimonial/quotes.svg" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
+                                            <img src="assets/images/testimonial/quotes.svg" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="border border-2 p-5 rounded-custom position-relative">
-                                            <img src="assets/img/testimonial/quotes-dot.svg" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
+                                            <img src="assets/images/testimonial/quotes-dot.svg" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
                                             <div class="d-flex mb-32 align-items-center">
-                                                <img src="assets/img/testimonial/2.jpg" class="img-fluid me-3 rounded" width="60" alt="user">
+                                                <img src="assets/images/testimonial/2.jpg" class="img-fluid me-3 rounded" width="60" alt="user">
                                                 <div class="author-info">
                                                     <h6 class="mb-0">Mr.Rupan Oberoi</h6>
                                                     <small>Founder and CEO</small>
@@ -430,14 +430,14 @@
                                                 <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                                 <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                             </ul>
-                                            <img src="assets/img/testimonial/quotes.svg" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
+                                            <img src="assets/images/testimonial/quotes.svg" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="border border-2 p-5 rounded-custom position-relative">
-                                            <img src="assets/img/testimonial/quotes-dot.svg" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
+                                            <img src="assets/images/testimonial/quotes-dot.svg" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
                                             <div class="d-flex mb-32 align-items-center">
-                                                <img src="assets/img/testimonial/4.jpg" class="img-fluid me-3 rounded" width="60" alt="user">
+                                                <img src="assets/images/testimonial/4.jpg" class="img-fluid me-3 rounded" width="60" alt="user">
                                                 <div class="author-info">
                                                     <h6 class="mb-0">Joan Dho</h6>
                                                     <small>Founder and CTO</small>
@@ -455,15 +455,15 @@
                                                 <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                                 <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                             </ul>
-                                            <img src="assets/img/testimonial/quotes.svg" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
+                                            <img src="assets/images/testimonial/quotes.svg" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="border border-2 p-5 rounded-custom position-relative">
-                                            <img src="assets/img/testimonial/quotes-dot.svg" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
+                                            <img src="assets/images/testimonial/quotes-dot.svg" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
                                             <div class="d-flex mb-32 align-items-center">
-                                                <img src="assets/img/testimonial/5.jpg" class="img-fluid me-3 rounded" width="60" alt="user">
+                                                <img src="assets/images/testimonial/5.jpg" class="img-fluid me-3 rounded" width="60" alt="user">
                                                 <div class="author-info">
                                                     <h6 class="mb-0">Ranu Mondal</h6>
                                                     <small>Lead Developer</small>
@@ -481,7 +481,7 @@
                                                 <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                                 <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                             </ul>
-                                            <img src="assets/img/testimonial/quotes.svg" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
+                                            <img src="assets/images/testimonial/quotes.svg" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
                                         </div>
                                     </div>
 
@@ -511,7 +511,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-3 col-md-6 mt-4 mt-lg-0 mt-xl-0">
-                        <div class="rounded-custom border d-block office-address overflow-hidden z-2" style="background: url('assets/img/office-img-1.jpg')no-repeat center center / cover">
+                        <div class="rounded-custom border d-block office-address overflow-hidden z-2" style="background: url('assets/images/office-img-1.jpg')no-repeat center center / cover">
                             <div class="office-content text-center p-4">
                                 <span class="office-overlay"></span>
                                 <div class="office-info">
@@ -524,7 +524,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 mt-4 mt-lg-0 mt-xl-0">
-                        <div class="rounded-custom border d-block office-address overflow-hidden z-2" style="background: url('assets/img/office-img-2.jpg')no-repeat center center / cover">
+                        <div class="rounded-custom border d-block office-address overflow-hidden z-2" style="background: url('assets/images/office-img-2.jpg')no-repeat center center / cover">
                             <div class="office-content text-center p-4">
                                 <span class="office-overlay"></span>
                                 <div class="office-info">
@@ -537,7 +537,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 mt-4 mt-lg-0 mt-xl-0">
-                        <div class="rounded-custom border d-block office-address overflow-hidden z-2" style="background: url('assets/img/office-img-3.jpg')no-repeat center center / cover">
+                        <div class="rounded-custom border d-block office-address overflow-hidden z-2" style="background: url('assets/images/office-img-3.jpg')no-repeat center center / cover">
                             <div class="office-content text-center p-4">
                                 <span class="office-overlay"></span>
                                 <div class="office-info">
@@ -550,7 +550,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 mt-4 mt-lg-0 mt-xl-0">
-                        <div class="rounded-custom border d-block office-address overflow-hidden z-2" style="background: url('assets/img/office-img-5.jpg')no-repeat center center / cover">
+                        <div class="rounded-custom border d-block office-address overflow-hidden z-2" style="background: url('assets/images/office-img-5.jpg')no-repeat center center / cover">
                             <div class="office-content text-center p-4">
                                 <span class="office-overlay"></span>
                                 <div class="office-info">
