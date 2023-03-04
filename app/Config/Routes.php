@@ -43,6 +43,8 @@ $routes->get('our-apps/show/(:uuid)', [\App\Controllers\Frontend\OurappsControll
 $routes->get('about-us', [\App\Controllers\Frontend\AboutUsController::class, 'index']);
 $routes->get('contact-us', [\App\Controllers\Frontend\ContactUsController::class, 'index']);
 $routes->get('get-started', [\App\Controllers\Frontend\GetStartedController::class, 'index']);
+$routes->get('get-started/(:uuid)', [\App\Controllers\Frontend\GetStartedController::class, 'register']);
+$routes->post('get-started/store', [\App\Controllers\Frontend\GetStartedController::class, 'store']);
 
 // Routes Backend Website
 $routes->get('ext-login', [\App\Controllers\Extranet\AuthController::class, 'login']);

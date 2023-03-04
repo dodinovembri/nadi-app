@@ -15,7 +15,7 @@
         <div class="main-wrapper">
             <?= $this->include('frontend/components/header') ?>
 
-            <section class="hero-it-solution hero-nine-bg ptb-120" style="background: url(<?= base_url('assets/images/configs/' . $config->hero_background_image) ?>)no-repeat center center">
+            <section class="hero-it-solution hero-nine-bg ptb-80" style="background: url(<?= base_url('assets/images/configs/' . $config->hero_background_image) ?>)no-repeat center center">
                 <div class="container">
                     <div class="row align-items-center justify-content-lg-between">
                         <div class="col-lg-6 col-md-12">
