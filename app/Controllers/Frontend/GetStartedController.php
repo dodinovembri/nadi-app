@@ -2,7 +2,8 @@
 
 namespace App\Controllers\Frontend;
 
-use App\Models\ConfigurationModel;
+use App\Models\ConfigModel;
+use App\Models\ConfigMenuModel;
 use App\Models\AppModel;
 use App\Models\AppTypeModel;
 use App\Models\ClientModel;
@@ -12,9 +13,12 @@ class GetStartedController extends BaseController
     public function index()
     {
         // config
-        $configuration = new ConfigurationModel();
+        $configuration = new ConfigModel();
         $data['config'] = $configuration->get()->getFirstRow();
-        // apps
+        // config menu
+        $config_menu = new ConfigMenuModel();
+        $data['config_menu'] = $config_menu->get()->getFirstRow();        
+        // app type
         $app_type = new AppTypeModel();
         $data['app_types'] = $app_type->get()->getResult();
 
@@ -24,9 +28,12 @@ class GetStartedController extends BaseController
     public function register($id)
     {
         // config
-        $configuration = new ConfigurationModel();
+        $configuration = new ConfigModel();
         $data['config'] = $configuration->get()->getFirstRow();
-        // apps
+        // config menu
+        $config_menu = new ConfigMenuModel();
+        $data['config_menu'] = $config_menu->get()->getFirstRow();        
+        // app
         $app = new AppModel();
         $data['apps'] = $app->orderBy('created_at', 'DESC')->get()->getResult();
         $data['app_id'] = $id;

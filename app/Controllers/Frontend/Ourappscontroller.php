@@ -1,7 +1,9 @@
 <?php
 
 namespace App\Controllers\Frontend;
-use App\Models\ConfigurationModel;
+
+use App\Models\ConfigModel;
+use App\Models\ConfigMenuModel;
 use App\Models\AppTypeModel;
 use App\Models\AppModel;
 
@@ -9,24 +11,33 @@ class OurappsController extends BaseController
 {
     public function index()
     {
-        $configuration = new ConfigurationModel();
+        // config
+        $config = new ConfigModel();
+        $data['config'] = $config->get()->getFirstRow();
+        // config menu
+        $config_menu = new ConfigMenuModel();
+        $data['config_menu'] = $config_menu->get()->getFirstRow();
+        // app type
         $app_type = new AppTypeModel();
-
-        $data['config'] = $configuration->get()->getFirstRow();
         $data['app_types'] = $app_type->get()->getResult();
 
         return view('frontend/ourapps/index', $data);
     }
 
-    public function show($code)
+    public function show($id)
     {
-        $configuration = new ConfigurationModel();
+        // config
+        $config = new ConfigModel();
+        $data['config'] = $config->get()->getFirstRow();
+        // config menu
+        $config_menu = new ConfigMenuModel();
+        $data['config_menu'] = $config_menu->get()->getFirstRow();
+        // app type
         $app_type = new AppTypeModel();
-        $app = new AppModel();
-
-        $data['config'] = $configuration->get()->getFirstRow();
         $data['app_types'] = $app_type->get()->getResult();
-        $data['apps'] = $app->orderBy('created_at', 'DESC')->get()->getResult();
+        // app
+        $app = new AppModel();
+        $data['apps'] = $app->where('app_type_id', $id)->orderBy('created_at', 'DESC')->get()->getResult();
 
         return view('frontend/ourapps/show', $data);
     }

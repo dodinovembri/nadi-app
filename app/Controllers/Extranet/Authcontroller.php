@@ -3,12 +3,16 @@
 namespace App\Controllers\Extranet;
 
 use App\Models\UserModel;
+use App\Models\ConfigModel;
 
 class AuthController extends BaseController
 {
     public function login()
     {
-        return view('extranet/auth/login');
+        $config = new ConfigModel();
+        $data['config'] = $config->get()->getFirstRow();
+        
+        return view('extranet/auth/login', $data);
     }
 
     public function auth()

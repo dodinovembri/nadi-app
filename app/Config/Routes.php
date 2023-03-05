@@ -58,6 +58,40 @@ $routes->group('extranet', ['filter' => 'auth'], function($routes){
 		$routes->post('update/(:uuid)', [\App\Controllers\Extranet\ConfigController::class, 'update']);
     });	
 
+	$routes->group('config-menu', function ($routes) {
+		$routes->get('/', [\App\Controllers\Extranet\ConfigMenuController::class, 'index']);
+		$routes->post('update/(:uuid)', [\App\Controllers\Extranet\ConfigMenuController::class, 'update']);
+    });
+
+	$routes->group('app-type', function ($routes) {
+		$routes->get('/', [\App\Controllers\Extranet\AppTypeController::class, 'index']);
+		$routes->get('create', [\App\Controllers\Extranet\AppTypeController::class, 'create']);
+		$routes->post('store', [\App\Controllers\Extranet\AppTypeController::class, 'store']);
+		$routes->get('show/(:uuid)', [\App\Controllers\Extranet\AppTypeController::class, 'show']);
+		$routes->get('edit/(:uuid)', [\App\Controllers\Extranet\AppTypeController::class, 'edit']);
+		$routes->post('update/(:uuid)', [\App\Controllers\Extranet\AppTypeController::class, 'update']);
+		$routes->get('destroy/(:uuid)', [\App\Controllers\Extranet\AppTypeController::class, 'destroy']);
+    });	
+
+	$routes->group('brand', function ($routes) {
+		$routes->get('/', [\App\Controllers\Extranet\BrandController::class, 'index']);
+		$routes->get('create', [\App\Controllers\Extranet\BrandController::class, 'create']);
+		$routes->post('store', [\App\Controllers\Extranet\BrandController::class, 'store']);
+		$routes->get('show/(:uuid)', [\App\Controllers\Extranet\BrandController::class, 'show']);
+		$routes->get('edit/(:uuid)', [\App\Controllers\Extranet\BrandController::class, 'edit']);
+		$routes->post('update/(:uuid)', [\App\Controllers\Extranet\BrandController::class, 'update']);
+		$routes->get('destroy/(:uuid)', [\App\Controllers\Extranet\BrandController::class, 'destroy']);
+    });	
+
+	$routes->group('feature', function ($routes) {
+		$routes->get('/', [\App\Controllers\Extranet\FeatureController::class, 'index']);
+		$routes->get('create', [\App\Controllers\Extranet\FeatureController::class, 'create']);
+		$routes->post('store', [\App\Controllers\Extranet\FeatureController::class, 'store']);
+		$routes->get('show/(:uuid)', [\App\Controllers\Extranet\FeatureController::class, 'show']);
+		$routes->get('edit/(:uuid)', [\App\Controllers\Extranet\FeatureController::class, 'edit']);
+		$routes->post('update/(:uuid)', [\App\Controllers\Extranet\FeatureController::class, 'update']);
+		$routes->get('destroy/(:uuid)', [\App\Controllers\Extranet\FeatureController::class, 'destroy']);
+    });	
 });
 
 /*

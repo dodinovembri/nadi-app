@@ -20,7 +20,7 @@
                 <div class="row align-items-center justify-content-lg-between">
                     <div class="col-lg-6 col-md-12">
                         <div class="section-heading pt-60">
-                            <h3>Select your Application</h3>
+                            <h3><?= ucwords($config_menu->choose_app) ?></h3>
                         </div>
                     </div>
                 </div>

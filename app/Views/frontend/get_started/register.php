@@ -15,7 +15,7 @@
         <?= $this->include('frontend/components/header') ?>
 
         <!--register section start-->
-        <section class="hero-it-solution hero-nine-bg ptb-120" style="background: url(<?= base_url('assets/images/configs/' . $config->hero_background_image) ?>)">
+        <section class="hero-it-solution hero-nine-bg ptb-120" style="background: url(<?= base_url('assets/images/hero/' . $config->hero_background_image) ?>)">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-xl-5 col-lg-7 col-md-6 order-0 order-lg-1">
