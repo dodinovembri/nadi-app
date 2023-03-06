@@ -92,6 +92,16 @@ $routes->group('extranet', ['filter' => 'auth'], function($routes){
 		$routes->post('update/(:uuid)', [\App\Controllers\Extranet\FeatureController::class, 'update']);
 		$routes->get('destroy/(:uuid)', [\App\Controllers\Extranet\FeatureController::class, 'destroy']);
     });	
+
+	$routes->group('service', function ($routes) {
+		$routes->get('/', [\App\Controllers\Extranet\ServiceController::class, 'index']);
+		$routes->get('create', [\App\Controllers\Extranet\ServiceController::class, 'create']);
+		$routes->post('store', [\App\Controllers\Extranet\ServiceController::class, 'store']);
+		$routes->get('show/(:uuid)', [\App\Controllers\Extranet\ServiceController::class, 'show']);
+		$routes->get('edit/(:uuid)', [\App\Controllers\Extranet\ServiceController::class, 'edit']);
+		$routes->post('update/(:uuid)', [\App\Controllers\Extranet\ServiceController::class, 'update']);
+		$routes->get('destroy/(:uuid)', [\App\Controllers\Extranet\ServiceController::class, 'destroy']);
+    });		
 });
 
 /*

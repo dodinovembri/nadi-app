@@ -13,6 +13,7 @@
             <li class="nav-item"><a href="<?= base_url('extranet/config-menu') ?>"><i class="nav-icon i-Cursor-Click"></i><span class="item-name">Label & Menu Config</span></a></li>
             <li class="nav-item"><a href="<?= base_url('extranet/brand') ?>"><i class="nav-icon i-Crop-2"></i><span class="item-name">Brands</span></a></li>   
             <li class="nav-item"><a href="<?= base_url('extranet/feature') ?>"><i class="nav-icon i-Crop-2"></i><span class="item-name">Features</span></a></li>            
+            <li class="nav-item"><a href="<?= base_url('extranet/service') ?>"><i class="nav-icon i-Crop-2"></i><span class="item-name">Services</span></a></li>            
         </ul>
         <ul class="childNav" data-parent="masterdata">
             <li class="nav-item"><a href="<?= base_url('extranet/app-type') ?>"><i class="nav-icon i-Crop-2"></i><span class="item-name">App Types</span></a></li>
