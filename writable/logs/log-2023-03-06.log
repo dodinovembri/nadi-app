@@ -299,3 +299,11 @@ in APPPATH\Controllers\Extranet\HomeExtranetController.php on line 17.
  3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
  5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-06 10:30:41 --> Call to undefined method App\Models\AppModel::wherer
+in SYSTEMPATH\Model.php on line 807.
+ 1 APPPATH\Controllers\Frontend\GetStartedController.php(69): CodeIgniter\Model->__call('wherer', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\GetStartedController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\GetStartedController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

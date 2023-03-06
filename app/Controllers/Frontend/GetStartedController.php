@@ -62,8 +62,12 @@ class GetStartedController extends BaseController
             $name = explode(" ", $this->request->getPost('name'));
             $trial_domain = strtolower($name[0]);
             $data['trial_domain'] = $trial_domain;
-            $data['app_id'] = $this->request->getPost('app_id');
-    
+            $app_id = $this->request->getPost('app_id');
+            $data['app_id'] = $app_id;
+            // app
+            $app = new AppModel();
+            $data['app'] = $app->where('id', $app_id)->get()->getFirstRow();
+
             return view('frontend/get_started/redirect', $data);       
         }
     }
