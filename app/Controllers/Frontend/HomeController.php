@@ -20,13 +20,13 @@ class HomeController extends BaseController
         $data['config_menu'] = $config_menu->get()->getFirstRow();
         // service
         $service = new ServiceModel();
-        $data['services'] = $service->get()->getResult();
+        $data['services'] = $service->where('status', 1)->get()->getResult();
         // feature
         $feature = new FeatureModel();
-        $data['features'] = $feature->get()->getResult();
+        $data['features'] = $feature->where('status', 1)->get()->getResult();
         // brand
         $brand = new BrandModel();
-        $data['brands'] = $brand->get()->getResult();
+        $data['brands'] = $brand->where('status', 1)->get()->getResult();
 
         return view('frontend/home/index', $data);
     }

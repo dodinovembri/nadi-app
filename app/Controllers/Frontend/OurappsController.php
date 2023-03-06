@@ -19,7 +19,7 @@ class OurappsController extends BaseController
         $data['config_menu'] = $config_menu->get()->getFirstRow();
         // app type
         $app_type = new AppTypeModel();
-        $data['app_types'] = $app_type->get()->getResult();
+        $data['app_types'] = $app_type->where('status', 1)->get()->getResult();
 
         return view('frontend/ourapps/index', $data);
     }
@@ -34,10 +34,10 @@ class OurappsController extends BaseController
         $data['config_menu'] = $config_menu->get()->getFirstRow();
         // app type
         $app_type = new AppTypeModel();
-        $data['app_types'] = $app_type->get()->getResult();
+        $data['app_types'] = $app_type->where('status', 1)->get()->getResult();
         // app
         $app = new AppModel();
-        $data['apps'] = $app->where('app_type_id', $id)->orderBy('created_at', 'DESC')->get()->getResult();
+        $data['apps'] = $app->where('status', 1)->where('app_type_id', $id)->orderBy('created_at', 'DESC')->get()->getResult();
 
         return view('frontend/ourapps/show', $data);
     }

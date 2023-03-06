@@ -10,8 +10,8 @@ class ContactUsController extends BaseController
     public function index()
     {
         // config
-        $configuration = new ConfigModel();
-        $data['config'] = $configuration->get()->getFirstRow();
+        $config = new ConfigModel();
+        $data['config'] = $config->get()->getFirstRow();
         // config menu
         $config_menu = new ConfigMenuModel();
         $data['config_menu'] = $config_menu->get()->getFirstRow();

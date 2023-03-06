@@ -13,14 +13,14 @@ class GetStartedController extends BaseController
     public function index()
     {
         // config
-        $configuration = new ConfigModel();
-        $data['config'] = $configuration->get()->getFirstRow();
+        $config = new ConfigModel();
+        $data['config'] = $config->get()->getFirstRow();
         // config menu
         $config_menu = new ConfigMenuModel();
         $data['config_menu'] = $config_menu->get()->getFirstRow();        
         // app type
         $app_type = new AppTypeModel();
-        $data['app_types'] = $app_type->get()->getResult();
+        $data['app_types'] = $app_type->where('status', 1)->get()->getResult();
 
         return view('frontend/get_started/index', $data);
     }
@@ -28,14 +28,14 @@ class GetStartedController extends BaseController
     public function register($id)
     {
         // config
-        $configuration = new ConfigModel();
-        $data['config'] = $configuration->get()->getFirstRow();
+        $config = new ConfigModel();
+        $data['config'] = $config->get()->getFirstRow();
         // config menu
         $config_menu = new ConfigMenuModel();
         $data['config_menu'] = $config_menu->get()->getFirstRow();        
         // app
         $app = new AppModel();
-        $data['apps'] = $app->orderBy('created_at', 'DESC')->get()->getResult();
+        $data['apps'] = $app->where('status', 1)->orderBy('created_at', 'DESC')->get()->getResult();
         $data['app_id'] = $id;
 
         return view('frontend/get_started/register', $data);
