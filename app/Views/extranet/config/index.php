@@ -208,6 +208,13 @@
 											<img src="<?= base_url('assets/images/hero/'.$config->hero_banner_image) ?>" style="margin-top:10px" height="60" alt="">
 											<span><?= $config->hero_banner_image ?></span>
 										</div>
+										<div class="col-md-4 form-group mb-3">
+											<label>User Image Default</label>
+											<input class="form-control" type="file" name="user_image_default" value="<?= $config->user_image_default ?>" />
+											<sub>.jpg or .png file, size: <span style="color:red"><b>120x120</b></span> pixels</sub><br>
+											<img src="<?= base_url('assets/images/users/'.$config->user_image_default) ?>" style="margin-top:10px" height="60" alt="">
+											<span><?= $config->user_image_default ?></span>
+										</div>
 									</div>
 								</div>
 							</div>							

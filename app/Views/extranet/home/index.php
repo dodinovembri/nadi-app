@@ -33,18 +33,8 @@
                         <div class="card card-icon-bg card-icon-bg-primary o-hidden mb-4">
                             <div class="card-body text-center"><i class="i-Checkout-Basket"></i>
                                 <div class="content">
-                                    <p class="text-muted mt-2 mb-0">Orders</p>
-                                    <p class="text-primary text-24 line-height-1 mb-2"></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="card card-icon-bg card-icon-bg-primary o-hidden mb-4">
-                            <div class="card-body text-center"><i class="i-Add-User"></i>
-                                <div class="content">
-                                    <p class="text-muted mt-2 mb-0">Customers</p>
-                                    <p class="text-primary text-24 line-height-1 mb-2"></p>
+                                    <p class="text-muted mt-2 mb-0">App Types</p>
+                                    <p class="text-primary text-16 line-height-1 mb-2"><?= $app_type_total ?></p>
                                 </div>
                             </div>
                         </div>
@@ -53,8 +43,18 @@
                         <div class="card card-icon-bg card-icon-bg-primary o-hidden mb-4">
                             <div class="card-body text-center"><i class="i-Financial"></i>
                                 <div class="content">
-                                    <p class="text-muted mt-2 mb-0">Sales</p>
-                                    <p class="text-primary text-24 line-height-1 mb-2">$4021</p>
+                                    <p class="text-muted mt-2 mb-0">Apps</p>
+                                    <p class="text-primary text-16 line-height-1 mb-2"><?= $app_total ?></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card card-icon-bg card-icon-bg-primary o-hidden mb-4">
+                            <div class="card-body text-center"><i class="i-Add-User"></i>
+                                <div class="content">
+                                    <p class="text-muted mt-2 mb-0">Clients</p>
+                                    <p class="text-primary text-16 line-height-1 mb-2"><?= $client_total ?></p>
                                 </div>
                             </div>
                         </div>
@@ -63,8 +63,8 @@
                         <div class="card card-icon-bg card-icon-bg-primary o-hidden mb-4">
                             <div class="card-body text-center"><i class="i-Money-2"></i>
                                 <div class="content">
-                                    <p class="text-muted mt-2 mb-0">Expense</p>
-                                    <p class="text-primary text-24 line-height-1 mb-2">$1200</p>
+                                    <p class="text-muted mt-2 mb-0">Features</p>
+                                    <p class="text-primary text-16 line-height-1 mb-2"><?= $feature_total ?></p>
                                 </div>
                             </div>
                         </div>

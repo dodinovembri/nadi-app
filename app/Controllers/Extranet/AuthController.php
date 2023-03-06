@@ -9,6 +9,7 @@ class AuthController extends BaseController
 {
     public function login()
     {
+        // config
         $config = new ConfigModel();
         $data['config'] = $config->get()->getFirstRow();
         
@@ -21,6 +22,7 @@ class AuthController extends BaseController
         $email = $this->request->getPost('email');
         $password = $this->request->getPost('password');
 
+        // user
         $user = new UserModel();
         $data = $user->where('email', $email)->where('role_code', 0)->first();
         if ($data) {
@@ -31,17 +33,18 @@ class AuthController extends BaseController
                     'id'       => $data['id'],
                     'name'     => $data['name'],
                     'email'    => $data['email'],
+                    'image'    => $data['image'],
                     'role_code' => $data['role_code'],
                     'logged_in'     => TRUE
                 ];
                 $session->set($ses_data);
                 return redirect()->to(base_url('extranet'));
             } else {
-                $session->setFlashdata('msg', 'Wrong Password');
+                $session->setFlashdata('warning', 'Wrong email or password');
                 return redirect()->to(base_url('ext-login'));
             }
         } else {
-            $session->setFlashdata('msg', 'Email not Found');
+            $session->setFlashdata('warning', 'Wrong email or password');
             return redirect()->to(base_url('ext-login'));
         }
     }

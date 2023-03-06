@@ -70,7 +70,7 @@ class ConfigController extends BaseController
         $hero_background_image = $this->request->getFile('hero_background_image');
         if ($hero_background_image != '') {
             $hero_background_image_name = $hero_background_image->getRandomName();
-            $hero_background_image->move('assets/images/auth/', $hero_background_image_name);
+            $hero_background_image->move('assets/images/hero/', $hero_background_image_name);
 
             $config->update($id, [
                 'modified_at' => date('Y-m-d H:i:s'),
@@ -82,14 +82,26 @@ class ConfigController extends BaseController
         $hero_banner_image = $this->request->getFile('hero_banner_image');
         if ($hero_banner_image != '') {
             $hero_banner_image_name = $hero_banner_image->getRandomName();
-            $hero_banner_image->move('assets/images/auth/', $hero_banner_image_name);
+            $hero_banner_image->move('assets/images/hero/', $hero_banner_image_name);
 
             $config->update($id, [
                 'modified_at' => date('Y-m-d H:i:s'),
                 'modifier_id' => session()->get('id'),
                 'hero_banner_image' => $hero_banner_image_name
             ]);
-        }         
+        }  
+        
+        $user_image_default = $this->request->getFile('user_image_default');
+        if ($user_image_default != '') {
+            $user_image_default_name = $user_image_default->getRandomName();
+            $user_image_default->move('assets/images/users/', $user_image_default_name);
+
+            $config->update($id, [
+                'modified_at' => date('Y-m-d H:i:s'),
+                'modifier_id' => session()->get('id'),
+                'user_image_default' => $user_image_default_name
+            ]);
+        }          
 
         $config->update($id, [
             'name'   => $this->request->getPost('name'),

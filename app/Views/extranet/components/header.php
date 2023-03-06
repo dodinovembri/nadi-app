@@ -14,17 +14,16 @@
         <!-- User avatar dropdown -->
         <div class="dropdown">
             <div class="user col align-self-end">
-                <img src="<?php if (session()->get('user_image') != null) {
-                    echo base_url('assets/images/faces/1.jpg');
+                <img src="<?php if (session()->get('user_image') == null) {
+                    echo base_url('assets/images/users/'. $config->user_image_default);
                 }else{
-                    echo base_url('assets/images/user/default_user.png');
+                    echo base_url('assets/images/users/'. session()->get('user_image'));
                 } ?>" id="userDropdown" alt="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                     <div class="dropdown-header">
                         <i class="i-Lock-User mr-1"></i> <?= session()->get('name') ?>
                     </div>
                     <a class="dropdown-item">Account settings</a>
-                    <a class="dropdown-item" href="<?= base_url('extranet/bill') ?>">Billing history</a>
                     <a class="dropdown-item" href="<?= base_url('ext-logout') ?>">Sign out</a>
                 </div>
             </div>
