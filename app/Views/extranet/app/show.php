@@ -43,7 +43,7 @@
                                     </div>
                                     <div class="col-md-6 form-group mb-3">
                                         <label>Image</label>
-                                        <img src="<?= base_url('assets/images/long-preview/' . $app->image) ?>" height="120" alt="App Image">
+                                        <img src="<?= base_url('assets/images/apps/' . $app->image) ?>" height="120" alt="App Image">
                                     </div>
                                     <div class="col-md-6 form-group mb-3">
                                         <label>Url</label>

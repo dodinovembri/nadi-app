@@ -38,7 +38,7 @@ class AppController extends BaseController
 
         $image = $this->request->getFile('image');
         $image_name = $image->getRandomName();
-        $image->move('assets/images/long-preview/', $image_name);
+        $image->move('assets/images/apps/', $image_name);
 
         $app->insert([
             'created_at' => date('Y-m-d H:i:s'),
@@ -95,7 +95,7 @@ class AppController extends BaseController
         $app_image = $this->request->getFile('image');
         if ($app_image != '') {
             $app_image_name = $app_image->getRandomName();
-            $app_image->move('assets/images/long-preview/', $app_image_name);
+            $app_image->move('assets/images/apps/', $app_image_name);
 
             $app->update($id, [
                 'modified_at' => date('Y-m-d H:i:s'),

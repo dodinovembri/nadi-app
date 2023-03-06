@@ -49,7 +49,7 @@
                                         </div>
                                         <div class="col-md-6 form-group mb-3">
                                             <label>Image</label>
-                                            <img src="<?= base_url('assets/images/long-preview/' . $app->image) ?>" height="120" alt="">
+                                            <img src="<?= base_url('assets/images/apps/' . $app->image) ?>" height="120" alt="">
                                             <input class="form-control" type="file" name="image" />
                                             <sub>.jpg or .png file, size: <span style="color:red"><b>45x45</b></span> pixels</sub>
                                         </div>

@@ -52,7 +52,7 @@
                                                 <tr>
                                                     <td><?= $no ?></td>
                                                     <td>
-                                                        <img src="<?= base_url('assets/images/long-preview/' . $value->image) ?>" width="80" alt="">
+                                                        <img src="<?= base_url('assets/images/apps/' . $value->image) ?>" width="80" alt="">
                                                     </td>
                                                     <td><?= $value->name ?></td>
                                                     <td><?= $value->url ?></td>

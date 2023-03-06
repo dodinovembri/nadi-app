@@ -29,7 +29,7 @@
                         <div class="col-md-6 col-lg-4">
                             <a href="<?= $value->url ?>" class="mt-5 d-block" target="_blank">
                                 <span class="image-bg">
-                                    <span class="image-shop-scroll" style="background-image: url(<?= base_url('assets/images/long-preview/' . $value->image) ?>)"></span>
+                                    <span class="image-shop-scroll" style="background-image: url(<?= base_url('assets/images/apps/' . $value->image) ?>)"></span>
                                 </span>
                                 <h5 class="mb-0 mt-3 text-center"><?= $value->name ?></h5>
                             </a>
