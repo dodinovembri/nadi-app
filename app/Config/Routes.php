@@ -101,7 +101,25 @@ $routes->group('extranet', ['filter' => 'auth'], function($routes){
 		$routes->get('edit/(:uuid)', [\App\Controllers\Extranet\ServiceController::class, 'edit']);
 		$routes->post('update/(:uuid)', [\App\Controllers\Extranet\ServiceController::class, 'update']);
 		$routes->get('destroy/(:uuid)', [\App\Controllers\Extranet\ServiceController::class, 'destroy']);
-    });		
+    });
+
+	$routes->group('app', function ($routes) {
+		$routes->get('/', [\App\Controllers\Extranet\AppController::class, 'index']);
+		$routes->get('create', [\App\Controllers\Extranet\AppController::class, 'create']);
+		$routes->post('store', [\App\Controllers\Extranet\AppController::class, 'store']);
+		$routes->get('show/(:uuid)', [\App\Controllers\Extranet\AppController::class, 'show']);
+		$routes->get('edit/(:uuid)', [\App\Controllers\Extranet\AppController::class, 'edit']);
+		$routes->post('update/(:uuid)', [\App\Controllers\Extranet\AppController::class, 'update']);
+		$routes->get('destroy/(:uuid)', [\App\Controllers\Extranet\AppController::class, 'destroy']);
+    });
+
+	$routes->group('client', function ($routes) {
+		$routes->get('/', [\App\Controllers\Extranet\ClientController::class, 'index']);
+		$routes->get('show/(:uuid)', [\App\Controllers\Extranet\ClientController::class, 'show']);
+		$routes->get('edit/(:uuid)', [\App\Controllers\Extranet\ClientController::class, 'edit']);
+		$routes->post('update/(:uuid)', [\App\Controllers\Extranet\ClientController::class, 'update']);
+		$routes->get('destroy/(:uuid)', [\App\Controllers\Extranet\ClientController::class, 'destroy']);
+    });	
 });
 
 /*

@@ -9,17 +9,18 @@
     </div>
     <div class="sidebar-left-secondary rtl-ps-none" data-perfect-scrollbar="" data-suppress-scroll-x="true">
         <ul class="childNav" data-parent="config">
-            <li class="nav-item"><a href="<?= base_url('extranet/config') ?>"><i class="nav-icon i-Bell1"></i><span class="item-name">General Config</span></a></li>
-            <li class="nav-item"><a href="<?= base_url('extranet/config-menu') ?>"><i class="nav-icon i-Cursor-Click"></i><span class="item-name">Label & Menu Config</span></a></li>
+            <li class="nav-item"><a href="<?= base_url('extranet/config') ?>"><i class="nav-icon i-Crop-2"></i><span class="item-name">General Config</span></a></li>
+            <li class="nav-item"><a href="<?= base_url('extranet/config-menu') ?>"><i class="nav-icon i-Crop-2"></i><span class="item-name">Label & Menu Config</span></a></li>
             <li class="nav-item"><a href="<?= base_url('extranet/brand') ?>"><i class="nav-icon i-Crop-2"></i><span class="item-name">Brands</span></a></li>   
             <li class="nav-item"><a href="<?= base_url('extranet/feature') ?>"><i class="nav-icon i-Crop-2"></i><span class="item-name">Features</span></a></li>            
             <li class="nav-item"><a href="<?= base_url('extranet/service') ?>"><i class="nav-icon i-Crop-2"></i><span class="item-name">Services</span></a></li>            
         </ul>
         <ul class="childNav" data-parent="masterdata">
             <li class="nav-item"><a href="<?= base_url('extranet/app-type') ?>"><i class="nav-icon i-Crop-2"></i><span class="item-name">App Types</span></a></li>
+            <li class="nav-item"><a href="<?= base_url('extranet/app') ?>"><i class="nav-icon i-Crop-2"></i><span class="item-name">Apps</span></a></li>
         </ul>
         <ul class="childNav" data-parent="transaction">
-            <li class="nav-item"><a href="#"><i class="nav-icon i-Medal-2"></i><span class="item-name">Client</span></a></li>
+            <li class="nav-item"><a href="<?= base_url('extranet/client') ?>"><i class="nav-icon i-Crop-2"></i><span class="item-name">Clients</span></a></li>
         </ul>
     </div>
     <div class="sidebar-overlay"></div>

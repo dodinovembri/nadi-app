@@ -52,7 +52,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="input-group mb-3">
-                                            <input type="password" name="password" class="form-control" placeholder="Administrator Password" aria-label="Administrator Password" required>
+                                            <input type="password" name="password" class="form-control" minlength="6" placeholder="Set Admin Password" aria-label="Administrator Password" required>
                                         </div>
                                     </div>
                                     <div class="col-12">
