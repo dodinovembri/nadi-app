@@ -5,6 +5,7 @@
             <li class="nav-item" data-item="config"><a class="nav-item-hold" href="#"><i class="nav-icon i-Library"></i><span class="nav-text">Config CMS</span></a><div class="triangle"></div></li>
             <li class="nav-item" data-item="masterdata"><a class="nav-item-hold" href="#"><i class="nav-icon i-Suitcase"></i><span class="nav-text">Master Data</span></a><div class="triangle"></div></li>
             <li class="nav-item" data-item="transaction"><a class="nav-item-hold" href="#"><i class="nav-icon i-Suitcase"></i><span class="nav-text">Transactions</span></a><div class="triangle"></div></li>
+            <li class="nav-item" data-item="task"><a class="nav-item-hold" href="#"><i class="nav-icon i-Suitcase"></i><span class="nav-text">Task</span></a><div class="triangle"></div></li>
         </ul>
     </div>
     <div class="sidebar-left-secondary rtl-ps-none" data-perfect-scrollbar="" data-suppress-scroll-x="true">
@@ -21,6 +22,9 @@
         </ul>
         <ul class="childNav" data-parent="transaction">
             <li class="nav-item"><a href="<?= base_url('extranet/client') ?>"><i class="nav-icon i-Crop-2"></i><span class="item-name">Clients</span></a></li>
+        </ul>
+        <ul class="childNav" data-parent="task">
+            <li class="nav-item"><a href="<?= base_url('extranet/task') ?>"><i class="nav-icon i-Crop-2"></i><span class="item-name">Task Management</span></a></li>
         </ul>
     </div>
     <div class="sidebar-overlay"></div>

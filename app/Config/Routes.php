@@ -120,6 +120,16 @@ $routes->group('extranet', ['filter' => 'auth'], function($routes){
 		$routes->post('update/(:uuid)', [\App\Controllers\Extranet\ClientController::class, 'update']);
 		$routes->get('destroy/(:uuid)', [\App\Controllers\Extranet\ClientController::class, 'destroy']);
     });	
+
+	$routes->group('task', function ($routes) {
+		$routes->get('/', [\App\Controllers\Extranet\TaskController::class, 'index']);
+		$routes->get('create', [\App\Controllers\Extranet\TaskController::class, 'create']);
+		$routes->post('store', [\App\Controllers\Extranet\TaskController::class, 'store']);
+		$routes->get('show/(:uuid)', [\App\Controllers\Extranet\TaskController::class, 'show']);
+		$routes->get('edit/(:uuid)', [\App\Controllers\Extranet\TaskController::class, 'edit']);
+		$routes->post('update/(:uuid)', [\App\Controllers\Extranet\TaskController::class, 'update']);
+		$routes->get('destroy/(:uuid)', [\App\Controllers\Extranet\TaskController::class, 'destroy']);
+    });	
 });
 
 /*
