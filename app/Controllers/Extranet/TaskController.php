@@ -37,8 +37,9 @@ class TaskController extends BaseController
             'creator_id' => session()->get('id'),
             'title' => $this->request->getPost('title'),
             'description' => $this->request->getPost('description'),
-            'start_date' => $this->request->getPost('start_date'),
-            'end_date' => $this->request->getPost('end_date'),
+            'assign_date' => $this->request->getPost('assign_date') ? $this->request->getPost('assign_date') : null,
+            'start_date' => $this->request->getPost('start_date') ? $this->request->getPost('start_date') : null,
+            'finish_date' => $this->request->getPost('finish_date') ? $this->request->getPost('finish_date') : null,
             'status' => $this->request->getPost('status')
         ]);
 
@@ -79,8 +80,9 @@ class TaskController extends BaseController
             'modifier_id' => session()->get('id'),
             'title' => $this->request->getPost('title'),
             'description' => $this->request->getPost('description'),
-            'start_date' => $this->request->getPost('start_date'),
-            'end_date' => $this->request->getPost('end_date'),
+            'assign_date' => $this->request->getPost('assign_date') ? $this->request->getPost('assign_date') : null,
+            'start_date' => $this->request->getPost('start_date') ? $this->request->getPost('start_date') : null,
+            'finish_date' => $this->request->getPost('finish_date') ? $this->request->getPost('finish_date') : null,
             'status' => $this->request->getPost('status')
         ]);
 

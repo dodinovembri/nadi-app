@@ -42,16 +42,28 @@
                                         <textarea class="form-control" rows="5" type="text" disabled><?= $task->description ?></textarea>
                                     </div>
                                     <div class="col-md-6 form-group mb-3">
+                                        <label>Assign Date</label>
+                                        <input class="form-control" type="text" value="<?= $task->assign_date ?>" disabled />
+                                    </div>
+                                    <div class="col-md-6 form-group mb-3">
                                         <label>Start Date</label>
                                         <input class="form-control" type="text" value="<?= $task->start_date ?>" disabled />
                                     </div>
                                     <div class="col-md-6 form-group mb-3">
-                                        <label>End Date</label>
-                                        <input class="form-control" type="text" value="<?= $task->end_date ?>" disabled />
+                                        <label>Finish Date</label>
+                                        <input class="form-control" type="text" value="<?= $task->finish_date ?>" disabled />
                                     </div>
                                     <div class="col-md-6 form-group mb-3">
                                         <label>Status</label>
-                                        <input class="form-control" type="text" value="<?= $task->status == 1 ? 'Active' : 'Inactive' ?>" disabled/>
+                                        <input class="form-control" type="text" value="<?php if ($task->status == 1) {
+                                            echo "Open";
+                                        }elseif ($task->status == 2) {
+                                            echo "On Process";
+                                        }elseif ($task->status == 3) {
+                                            echo "Closed";
+                                        }else{
+                                            echo "Undefined Status";
+                                        } ?>" disabled/>
                                     </div>
                                     <div class="col-md-12" style="margin-top: 20px;">
                                         <a href="<?= base_url('extranet/task') ?>"><button class="btn btn-primary">Back to List</button></a>

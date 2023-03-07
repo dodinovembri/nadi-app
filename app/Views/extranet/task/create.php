@@ -43,18 +43,23 @@
                                             <textarea class="form-control" type="text" rows="5" name="description" placeholder="Enter description" required></textarea>
                                         </div>
                                         <div class="col-md-6 form-group mb-3">
-                                            <label>Start Date</label>
-                                            <input class="form-control" type="date" name="start_date" placeholder="Enter start date"/>
+                                            <label>Assign Date</label>
+                                            <input class="form-control" type="date" name="assign_date" />
                                         </div>
                                         <div class="col-md-6 form-group mb-3">
-                                            <label>End Date</label>
-                                            <input class="form-control" type="date" name="end_date" placeholder="Enter end date"/>
+                                            <label>Start Date</label>
+                                            <input class="form-control" type="date" name="start_date" />
+                                        </div>
+                                        <div class="col-md-6 form-group mb-3">
+                                            <label>Finish Date</label>
+                                            <input class="form-control" type="date" name="finish_date" />
                                         </div>
                                         <div class="col-md-6 form-group mb-3">
                                             <label>Status</label>
                                             <select class="form-control" name="status" required>
-                                                <option value="1">Active</option>
-                                                <option value="0">Inactive</option>
+                                                <option value="1">Open</option>
+                                                <option value="2">On Process</option>
+                                                <option value="3">Closed</option>
                                             </select>
                                         </div>
                                         <div class="col-md-12" style="margin-top: 20px;">

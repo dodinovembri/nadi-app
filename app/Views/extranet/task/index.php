@@ -40,9 +40,10 @@
                                                 <th style="width:10px">No</th>
                                                 <th>Title</th>
                                                 <th>Description</th>
+                                                <th>Assign Date</th>
                                                 <th>Start Date</th>
-                                                <th>End Date</th>
-                                                <th style="width:25px">Status</th>
+                                                <th>Finish Date</th>
+                                                <th>Status</th>
                                                 <th style="width:80px">Actions</th>
                                             </tr>
                                         </thead>
@@ -54,13 +55,18 @@
                                                     <td><?= $no ?></td>
                                                     <td><?= $value->title ?></td>
                                                     <td><?= $value->description ?></td>
+                                                    <td><?= $value->assign_date ?></td>
                                                     <td><?= $value->start_date ?></td>
-                                                    <td><?= $value->end_date ?></td>
+                                                    <td><?= $value->finish_date ?></td>    
                                                     <td>
                                                         <?php if ($value->status == 1) {
-                                                            echo "Active";
-                                                        } elseif ($value->status == 0) {
-                                                            echo "Inactive";
+                                                            echo '<span style="color: red">Open</span>';
+                                                        } elseif ($value->status == 2) {
+                                                            echo '<span style="color: blue">On Process</span>';
+                                                        } elseif ($value->status == 3) {
+                                                            echo '<span style="color: green">Closed</span>';
+                                                        } else {
+                                                            echo "Undefined Status";
                                                         } ?>
                                                     </td>
                                                     <td>
@@ -105,7 +111,7 @@
             <?= $this->include('extranet/components/footer') ?>
         </div>
     </div>
-	<?= $this->include('extranet/components/scripts') ?>
+    <?= $this->include('extranet/components/scripts') ?>
 </body>
 
 </html>

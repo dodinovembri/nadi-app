@@ -43,22 +43,32 @@
                                             <textarea class="form-control" type="text" rows="5" name="description" placeholder="Enter description" required><?= $task->description ?></textarea>
                                         </div>
                                         <div class="col-md-6 form-group mb-3">
-                                            <label>Start Date</label>
-                                            <input class="form-control" type="date" name="start_date" value="<?= $task->start_date ?>" placeholder="Enter start date" />
+                                            <label>Assign Date</label>
+                                            <input class="form-control" type="date" name="assign_date" value="<?= $task->assign_date ?>" />
                                         </div>
                                         <div class="col-md-6 form-group mb-3">
-                                            <label>End Date</label>
-                                            <input class="form-control" type="date" name="end_date" value="<?= $task->end_date ?>" placeholder="Enter end date" />
+                                            <label>Start Date</label>
+                                            <input class="form-control" type="date" name="start_date" value="<?= $task->start_date ?>" />
+                                        </div>
+                                        <div class="col-md-6 form-group mb-3">
+                                            <label>Finish Date</label>
+                                            <input class="form-control" type="date" name="finish_date" value="<?= $task->finish_date ?>" />
                                         </div>
                                         <div class="col-md-6 form-group mb-3">
                                             <label>Status</label>
                                             <select class="form-control" name="status">
-                                                <?php if ($task->status == 0) { ?>
-                                                    <option value="0">Inactive</option>
-                                                    <option value="1">Active</option>
-                                                <?php } elseif ($task->status == 1) { ?>
-                                                    <option value="1">Active</option>
-                                                    <option value="0">Inactive</option>
+                                                <?php if ($task->status == 1) { ?>
+                                                    <option value="1">Open</option>
+                                                    <option value="2">On Process</option>
+                                                    <option value="3">Closed</option>
+                                                <?php } elseif ($task->status == 2) { ?>
+                                                    <option value="2">On Process</option>
+                                                    <option value="1">Open</option>
+                                                    <option value="3">Closed</option>
+                                                <?php } elseif ($task->status == 3) { ?>
+                                                    <option value="3">Closed</option>
+                                                    <option value="1">Open</option>
+                                                    <option value="2">On Process</option>
                                                 <?php } ?>
                                             </select>
                                         </div>
