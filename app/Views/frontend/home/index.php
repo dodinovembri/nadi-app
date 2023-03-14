@@ -15,7 +15,7 @@
         <!-- hero section start-->
         <section class="hero-it-solution hero-nine-bg ptb-120" style="background: url(<?= base_url('assets/images/hero/' . $config->hero_background_image) ?>)no-repeat center center">
             <div class="container">
-                <div class="row align-items-center">
+                <div class="row align-items-center mt-5">
                     <div class="col-lg-6 col-md-10">
                         <div class="hero-content-wrap mt-5 mt-lg-0 mt-xl-0">
                             <h1 class="fw-bold display-5"><?= $config->hero_title; ?></h1>
