@@ -26,7 +26,6 @@ $segment = $uri->getSegment(2);
             </div>
 
             <div class="action-btns text-end me-5 me-lg-0 d-none d-md-block d-lg-block">
-                <a href="<?= base_url('ext-login') ?>" class="btn btn-link text-decoration-none me-2"><?= ucfirst($config_menu->signin) ?></a>
                 <a href="<?= base_url('get-started') ?>" class="btn btn-primary"><?= ucfirst($config_menu->get_started) ?></a>
             </div>
         </div>
@@ -51,7 +50,6 @@ $segment = $uri->getSegment(2);
                 <li><a href="<?= base_url('contact-us') ?>" class="nav-link"><?= ucfirst($config_menu->contact_us) ?></a></li>
             </ul>
             <div class="action-btns mt-4 ps-3">
-                <a href="<?= base_url('ext-login') ?>" class="btn btn-outline-primary me-2"><?= ucfirst($config_menu->signin) ?></a>
                 <a href="<?= base_url('get-started') ?>" class="btn btn-primary"><?= ucfirst($config_menu->get_started) ?></a>
             </div>
         </div>
