@@ -47,7 +47,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-md-10">
                         <div class="section-heading text-center">
-                            <h2><?= $config->service_title ?></h2>
+                            <h3><?= $config->service_title ?></h3>
                             <p><?= $config->service_subtitle ?></p>
                         </div>
                     </div>
@@ -184,7 +184,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-7 col-md-10">
                         <div class="section-heading text-center">
-                            <h2><?= $config->brand_title ?></h2>
+                            <h3><?= $config->brand_title ?></h3>
                             <p><?= $config->brand_subtitle ?></p>
                         </div>
                     </div>
