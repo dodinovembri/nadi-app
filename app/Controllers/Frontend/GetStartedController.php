@@ -71,8 +71,6 @@ class GetStartedController extends BaseController
             // app
             $app = new AppModel();
             $data['app'] = $app->where('id', $app_id)->where('status', 1)->get()->getFirstRow();
-            print_r(json_encode($data['app']->url));
-            die;
 
             return view('frontend/get_started/redirect', $data);       
         }
