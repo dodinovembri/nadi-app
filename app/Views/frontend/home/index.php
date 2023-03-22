@@ -129,7 +129,7 @@
                                             <h3 class="h5"><?= $config->pricing_yearly_title ?></h3>
                                             <p><?= $config->pricing_yearly_subtitle ?></p>
                                             <div class="pricing-price mt-5">
-                                                <h3 class="h3 fw-bold"><?= $config->pricing_yearly_price ?><span>/<?= $config_menu->day ?></span></h3>
+                                                <h3 class="h3 fw-bold"><?= $config->pricing_yearly_price ?><span>/<?= $config_menu->year ?></span></h3>
                                             </div>
                                             <a href="<?= base_url('get-started') ?>" class="btn btn-primary mt-3"><?= $config_menu->day_trial ?></a>
                                         </div>
